@@ -1,8 +1,8 @@
-# The Diplomat | Bar & Grill
+# Jim's | Bar & Grill
 
 ![Am I Responsive](#)
 
-**Developer: Arron Beale**
+**Developer: James Lynch**
 
 💻 [Visit live website](#)
 
