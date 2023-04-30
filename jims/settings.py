@@ -56,9 +56,12 @@ INSTALLED_APPS = [
     'blog',
 ]
 
+# ID required so Django can handle multiple sites
 SITE_ID = 1
 
+# Redirects to home page once logged in
 LOGIN_REDIRECT_URL = '/'
+# Redirects to home page once logged out
 LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
