@@ -9,8 +9,20 @@ from django.contrib import messages
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    template_name = "blog.html"
     paginate_by = 4
+
+    def get(self, request, *args, **kwargs):
+        """
+        This view renders the blog page and also all published posts
+        """
+        posts = Post.objects.all()
+        paginator = Paginator(Post.objects.all(), 4)
+        page = request.GET.get('page')
+        postings = paginator.get_page(page)
+
+        return render(
+            request, 'blog/blog.html',  {'posts': posts, 'postings': postings})
 
 
 class PostDetail(View):

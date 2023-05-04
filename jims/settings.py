@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'blog',
+    'home',
 ]
 
 # ID required so Django can handle multiple sites
