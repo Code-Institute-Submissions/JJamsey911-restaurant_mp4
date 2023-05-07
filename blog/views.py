@@ -4,13 +4,12 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
-# from django.core.paginator import Paginator
 
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "blog.html"
+    template_name = "blog/blog.html"
     paginate_by = 4
 
 
@@ -78,4 +77,4 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('blog/post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))

@@ -2,11 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-STATUS = ((0, "Draft"), (1, "Published"))
+
 # You must migrate models every time a model has been added, edited or deleted
 # python3 manage.py makemigrations --dry-run
 # python3 manage.py makemigrations
 # python3 manage.py migrate
+
+
+STATUS = ((0, "Draft"), (1, "Published"))
 
 
 # Create your models here.
