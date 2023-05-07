@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
+# from django.core.paginator import Paginator
 
 
 class PostList(generic.ListView):
@@ -11,18 +12,6 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "blog.html"
     paginate_by = 4
-
-    def get(self, request, *args, **kwargs):
-        """
-        This view renders the blog page and also all published posts
-        """
-        posts = Post.objects.all()
-        paginator = Paginator(Post.objects.all(), 4)
-        page = request.GET.get('page')
-        postings = paginator.get_page(page)
-
-        return render(
-            request, 'blog/blog.html',  {'posts': posts, 'postings': postings})
 
 
 class PostDetail(View):
@@ -37,10 +26,11 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
                 "comments": comments,
+                "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
@@ -68,7 +58,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
                 "comments": comments,
@@ -88,4 +78,4 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('blog/post_detail', args=[slug]))
