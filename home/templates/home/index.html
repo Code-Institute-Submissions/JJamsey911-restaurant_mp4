@@ -1,5 +1,100 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
+{% load static %}
 
 {% block content %}
-Hello World
+<!-- carousel -->
+<div class="col-md-8 mx-auto">
+    <div class="row">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100 rounded"
+                        alt="A restaurant setting photograph">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/res_cover_2.jpg' %}" class="d-block w-100 rounded"
+                        alt="A picture of a table setting">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100 rounded"
+                        alt="A photo of a table with wine glasses">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row text-center mt-5">
+        <h1>Welcome to Jim's Bar & Grill</h1>
+        <p><em>Great food for everyone.</em></p>
+    </div>
+</div>
+<!-- cards -->
+<section class="container">
+    <div class="row d-flex my-5 justify-content-center text-center">
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
+            <a href="#" class="text-decoration-none">
+                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top rounded img-fluid"
+                    alt="A photo of a table setting">
+            </a>
+            <div class="row mt-3 mb-3">
+                <a href="#">
+                    <h2>Book a Table</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
+            <a href="#" class="text-decoration-none">
+                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top rounded img-fluid"
+                    alt="A photo of a person eating a meal">
+            </a>
+            <div class="row mt-3 mb-3">
+                <a href="#">
+                    <h2>Food Menu</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
+            <a href="#" class="text-decoration-none">
+                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" class="card-img-top rounded img-fluid"
+                    alt="A photo of a glass of whiskey">
+            </a>
+            <div class="row mt-3 mb-3">
+                <a href="#">
+                    <h2>Drinks Menu</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="row text-center">
+        <p><em>Allow us to look after you, your friends and family.</em></p>
+    </div>
+</div>
+<section class="container-fluid">
+    <div class="row d-flex my-5 justify-content-center">
+        <!-- Events catered for -->
+        <div class="col-md-4 card shadow p-3 mt-5 rounded">
+            <h3>We cater for the following events</h3>
+            <ul>
+                <li>Private Parties</li>
+                <li>Terrace Parties</li>
+                <li>Corportate Events</li>
+                <li>Work Parties</li>
+                <li>Date Nights</li>
+                <li>Cocktail Parties</li>
+            </ul>
+            <p><em>Please contact us to arrange an event!</em></p>
+            <div class="col-12 mt-5">
+                <img src="{% static 'images/res_cover_1.jpg' %}" class="img-fluid rounded shadow"
+                    alt="A photo of man holding a Mojito">
+            </div>
+        </div>
+    </div>
+</section>
+
 {%endblock%}
