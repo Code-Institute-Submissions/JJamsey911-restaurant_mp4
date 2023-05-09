@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'blog',
     'home',
     'menu',
+    'reservations',
 ]
 
 # ID required so Django can handle multiple sites
