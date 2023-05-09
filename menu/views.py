@@ -14,7 +14,7 @@ def food_menu(request):
     """
     food_list = FoodItem.objects.all()
     return render(
-        request, 'bar_and_grill/food_menu.html', {'food_list': food_list})
+        request, 'menu/food_menu.html', {'food_list': food_list})
 
 
 def drink_menu(request):
@@ -23,4 +23,4 @@ def drink_menu(request):
     """
     drink_list = DrinkItem.objects.all()
     return render(
-        request, 'bar_and_grill/drink_menu.html', {'drink_list': drink_list})
+        request, 'menu/drink_menu.html', {'drink_list': drink_list})
