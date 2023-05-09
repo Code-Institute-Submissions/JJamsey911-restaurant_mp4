@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'blog',
     'home',
+    'menu',
 ]
 
 # ID required so Django can handle multiple sites
