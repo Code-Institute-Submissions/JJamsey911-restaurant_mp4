@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     'blog',
     'home',
     'menu',
-    'reservations',
+    'bookings',
     'phonenumber_field',
     'rangefilter',
 ]

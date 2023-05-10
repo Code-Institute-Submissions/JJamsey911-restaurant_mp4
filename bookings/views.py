@@ -38,7 +38,7 @@ class Reservations(View):
     is registered and inserts the users email into the
     email field
     """
-    template_name = 'reservations/reservations.html'
+    template_name = 'bookings/reservations.html'
     success_message = 'Booking has been made.'
 
     def get(self, request, *args, **kwargs):
@@ -50,7 +50,7 @@ class Reservations(View):
             booking_form = BookingForm(initial={'email': email})
         else:
             booking_form = BookingForm()
-        return render(request, 'reservations/reservations.html',
+        return render(request, 'bookings/reservations.html',
                       {'booking_form': booking_form})
 
     def post(self, request):
@@ -66,9 +66,9 @@ class Reservations(View):
             booking.save()
             messages.success(
                 request, "Booking succesful, awaiting confirmation")
-            return render(request, 'reservations/confirmed.html')
+            return render(request, 'bookings/confirmed.html')
 
-        return render(request, 'reservations/reservations.html',
+        return render(request, 'bookings/reservations.html',
                       {'booking_form': booking_form})
 
 
@@ -79,21 +79,21 @@ class Confirmed(generic.DetailView):
     """
     This view will display confirmation on a successful booking
     """
-    template_name = 'reservations/confirmed.html'
+    template_name = 'bookings/confirmed.html'
 
     def get(self, request):
-        return render(request, 'reservations/confirmed.html')
+        return render(request, 'bookings/confirmed.html')
 
 
-# Display all the reservations the user has active,
-# reservations older than today will be expired and the
+# Display all the bookings the user has active,
+# bookings older than today will be expired and the
 # user will not be able to edit or cancel them once
 # expired
 
 
 class BookingList(generic.ListView):
     """
-    This view will display all the reservations
+    This view will display all the bookings
     a particular user has made
     """
     model = Booking
@@ -114,13 +114,48 @@ class BookingList(generic.ListView):
                 date.status = 'Booking Expired'
 
         if request.user.is_authenticated:
-            reservations = Booking.objects.filter(user=request.user)
+            bookings = Booking.objects.filter(user=request.user)
             return render(
                 request,
-                'reservations/booking_list.html',
+                'bookings/booking_list.html',
                 {
                     'booking': booking,
-                    'reservations': reservations,
+                    'bookings': bookings,
                     'booking_page': booking_page})
         else:
             return redirect('accounts/login.html')
+
+
+# Displays the edit booking page and form so the user
+# can then change any detail of the booking and update it
+
+
+class EditBooking(SuccessMessageMixin, UpdateView):
+    """
+    This view will display the booking by it's primary key
+    so the user can then edit it
+    """
+    model = Booking
+    form_class = BookingForm
+    template_name = 'bookings/edit_booking.html'
+    success_message = 'Booking has been updated.'
+
+    def get_success_url(self, **kwargs):
+        return reverse('booking_list')
+
+
+# Deletes the selected booking the user wishes to cancel
+
+def cancel_booking(request, pk):
+    """
+    Deletes the booking identified by it's primary key by the user
+    """
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        messages.success(request, "Booking cancelled")
+        return redirect('booking_list')
+
+    return render(
+        request, 'bookings/cancel_booking.html', {'booking': booking})
