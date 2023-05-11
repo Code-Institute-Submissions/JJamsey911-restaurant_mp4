@@ -35,6 +35,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+<<<<<<< HEAD
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
@@ -59,6 +60,31 @@
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     {% if user.is_authenticated %}
+=======
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'food_menu' %}">Food</a></li>
+                        <li><a class="dropdown-item" href="{% url 'drink_menu' %}">Drink</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'reservations' %}">Resrvations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                {% if user.is_authenticated %}
+>>>>>>> d23e11ad2997972e3b30795aabcdac37cbc2ea57
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'booking_list' %}">My Bookings</a>
                     </li>
