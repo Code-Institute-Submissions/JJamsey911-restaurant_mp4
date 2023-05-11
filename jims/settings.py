@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'bookings',
     'phonenumber_field',
     'rangefilter',
+    'contact',
 ]
 
 # ID required so Django can handle multiple sites
