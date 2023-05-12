@@ -55,16 +55,17 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "crispy_forms",
+    "crispy_bootstrap5",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
     "django_summernote",
-    "blog",
+    "phonenumber_field",
+    "rangefilter",
     "home",
     "menu",
     "bookings",
-    "phonenumber_field",
-    "rangefilter",
+    "blog",
     "contact",
 ]
 
@@ -85,7 +86,9 @@ MESSAGE_TAGS = {
     messages.ERROR: "alert-danger",
 }
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
