@@ -65,8 +65,4 @@ class ContactMessage(View):
             return render(request, 'contact/received.html')
 
         return render(request, 'contact/contact.html',
-<<<<<<< HEAD
-                      {'contact_form': contact_form})
-=======
-                      {'contact_form': contact_form})
->>>>>>> d23e11ad2997972e3b30795aabcdac37cbc2ea57
+                    {'contact_form': contact_form})
