@@ -32,7 +32,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["jims-bar-and-grill.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = [
+    "jims-bar-and-grill.herokuapp.com",
+    "8000-jamsey911-restaurant-mp4-js8fa25eft.us2.codeanyapp.com",
+    "localhost",
+]
 
 # To Prevents 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = "none"
