@@ -3,11 +3,13 @@
 body {
     background-color: #5c3131;
     font-family: 'Kanit', sans-serif;
-    font-weight: 200;  
+    font-weight: 200;
     color: #ffff;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 400;
 }
 
@@ -36,10 +38,11 @@ a:hover {
 }
 
 .carousel-caption {
-    /* position: absolute;
-    top: 150px; */
-    background-color: rgb(0,0,0,0.3);
- }
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+
+
 
 
 /* 
