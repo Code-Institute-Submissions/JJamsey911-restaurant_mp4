@@ -5,7 +5,7 @@
 {% block content %}
 <!-- carousel -->
 <section>
-    <div class="col-md-8 mx-auto">
+    <div class="col-md-10 mx-auto">
         <div id="heroImageNav" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <!-- Navigation buttons in captions bar -->
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100" alt="...">
+                    <img src="{% static 'images/res_cover_2.jpg' %}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block grow">
                         <a href="{% url 'food_menu' %}">
                             <h2>Food Menu</h2>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100" alt="...">
+                    <img src="{% static 'images/res_cover_3.jpg' %}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block grow">
                         <a href="{% url 'drink_menu' %}">
                             <h2>Drinks Menu</h2>
@@ -57,10 +57,10 @@
 <!-- cards -->
 <section class="container">
     <div class="row d-flex my-5 justify-content-evenly text-center">
-        <div class="col-10 col-md-3 mt-4 grow card shadow">
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
             <a href="#" class="text-decoration-none">
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
-                    class="card-img-top rounded img-fluid" alt="A photo of a table setting">
+                <img src="{% static 'images/booking_image.jpg' %}" class="card-img-top rounded img-fluid"
+                    alt="A photo of a table setting">
             </a>
             <div class="row mt-3 mb-3">
                 <a href="{% url 'reservations' %}">
@@ -69,26 +69,26 @@
             </div>
         </div>
 
-        <div class="col-10 col-md-3 mt-4 grow card shadow">
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
             <a href="#" class="text-decoration-none">
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
-                    class="card-img-top rounded img-fluid" alt="A photo of a person eating a meal">
+                <img src="{% static 'images/food_image.jpg' %}" class="card-img-top rounded img-fluid"
+                    alt="A photo of a person eating a meal">
             </a>
             <div class="row mt-3 mb-3">
-                <a href="{% url 'blog' %}">
-                    <h2>Blog</h2>
+                <a href="{% url 'food_menu' %}">
+                    <h2>Food Menu</h2>
                 </a>
             </div>
         </div>
 
-        <div class="col-10 col-md-3 mt-4 grow card shadow">
+        <div class="col-10 col-md-4 mt-4 grow card shadow">
             <a href="#" class="text-decoration-none">
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
-                    class="card-img-top rounded img-fluid" alt="A photo of a glass of whiskey">
+                <img src="{% static 'images/drink_image.jpg' %}" class="card-img-top rounded img-fluid"
+                    alt="A photo of a glass of whiskey">
             </a>
             <div class="row mt-3 mb-3">
-                <a href="{% url 'contact' %}">
-                    <h2>Contact</h2>
+                <a href="{% url 'drink_menu' %}">
+                    <h2>Drinks Menu</h2>
                 </a>
             </div>
         </div>
@@ -101,7 +101,7 @@
     </div>
 </div>
 <section class="container-fluid">
-    <div class="row d-flex my-5 justify-content-center">
+    <div class="row d-flex my-5 justify-content-evenly">
         <!-- Events catered for -->
         <div class="col-md-4 card shadow p-3 mt-5 rounded">
             <h3>We cater for the following events</h3>
@@ -113,11 +113,32 @@
                 <li>Date Nights</li>
                 <li>Cocktail Parties</li>
             </ul>
-            <p><em>Please contact us to arrange an event!</em></p>
+            <a href="{% url 'blog' %}">
+                <p>Click here to arrange an event!</p>
+            </a>
             <div class="col-12 mt-5">
-                <img src="{% static 'images/res_cover_1.jpg' %}" class="img-fluid rounded shadow"
+                <img src="{% static 'images/cater_image.jpg' %}" class="img-fluid rounded shadow"
                     alt="A photo of man holding a Mojito">
             </div>
+        </div>
+        <!-- Blog Information -->
+        <div class="col-md-4 card shadow p-3 mt-5 rounded justify-content-between">
+            <div class="col-12">
+                <img src="{% static 'images/blog_image.jpg' %}" class="img-fluid rounded shadow"
+                    alt="A couple looking at a laptop">
+            </div>
+            <h3 class="mt-4">Check out our amazing Blog</h3>
+            <ul>
+                <li>Recipes</li>
+                <li>Reviews</li>
+                <li>How to Guides</li>
+                <li>Cooking Steak Guides</li>
+                <li>Trends</li>
+                <li>Cocktails recipes</li>
+            </ul>
+            <a href="{% url 'blog' %}">
+                <p>Click here to go to our Blog Page!</p>
+            </a>
         </div>
     </div>
 </section>
