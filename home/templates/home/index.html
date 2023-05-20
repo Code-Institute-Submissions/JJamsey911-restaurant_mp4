@@ -17,10 +17,11 @@
             <!-- Hero Images with caption -->
             <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="caption rounded text-center">
+                    <img src="{% static 'images/res_cover_1.jpg' %}" class="d-block w-100
+                    " alt="...">
+                    <div class="caption rounded text-center d-none d-md-block">
                         <h1>Welcome to Jim's Bar & Grill</h1>
-                        <div class="d-flex justify-content-evenly">
+                        <span class="d-flex justify-content-evenly">
                             {% if user.is_authenticated %}
                             <a class="btn btn-outline-light btn-floating m-1 grow" href="{% url 'booking_list' %}"
                                 role="button"><i class="fa-regular fa-calendar"></i> My Bookings</a>
@@ -32,12 +33,11 @@
                             <a class="btn btn-outline-light btn-floating m-1 grow" href="{% url 'account_login' %}"
                                 role="button"><i class="fa-solid fa-pen-to-square"></i> Login</a>
                             {% endif %}
-                        </div>
+                        </span>
                     </div>
-                </div>
-                <div class=" carousel-item">
+                    <!-- <div class=" carousel-item">
                     <img src="{% static 'images/res_cover_2.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="caption rounded d-none d-md-block">
+                    <div class="caption rounded text-center d-none d-md-block">
                         <h1>Welcome to Jim's Bar & Grill</h1>
                         <div class="d-flex justify-content-evenly">
                             {% if user.is_authenticated %}
@@ -56,7 +56,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="{% static 'images/res_cover_3.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="caption rounded d-none d-md-block">
+                    <div class="caption rounded text-cente d-none d-md-blockr">
                         <h1>Welcome to Jim's Bar & Grill</h1>
                         <div class="d-flex justify-content-evenly">
                             {% if user.is_authenticated %}
@@ -72,19 +72,19 @@
                             {% endif %}
                         </div>
                     </div>
+                </div> -->
                 </div>
+                <!-- Slide buttons to change hero image -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroImageNav" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroImageNav" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!-- Slide buttons to change hero image -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroImageNav" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroImageNav" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
 </section>
 <!-- cards -->
 <section class="container">
