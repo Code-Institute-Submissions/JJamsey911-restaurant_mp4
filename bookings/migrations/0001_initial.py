@@ -17,10 +17,6 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="Table",
             fields=[
-                (
-                    "table_name",
-                    models.CharField(default="New Table", max_length=50, unique=True),
-                ),
                 ("max_seats", models.PositiveIntegerField(default=2)),
             ],
             options={
@@ -90,15 +86,6 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 (
-                    "table",
-                    models.ForeignKey(
-                        null=True,
-                        on_delete=django.db.models.deletion.CASCADE,
-                        related_name="table_reserved",
-                        to="bookings.table",
-                    ),
-                ),
-                (
                     "user",
                     models.ForeignKey(
                         null=True,
@@ -110,7 +97,7 @@ class Migration(migrations.Migration):
             ],
             options={
                 "ordering": ["-requested_time"],
-                "unique_together": {("requested_date", "requested_time", "table")},
+                "unique_together": {("requested_date", "requested_time")},
             },
         ),
     ]
