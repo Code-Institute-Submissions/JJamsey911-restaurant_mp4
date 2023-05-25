@@ -69,6 +69,10 @@ INSTALLED_APPS = [
     "contact",
 ]
 
+# Sets default phonenumber field format to irish
+PHONENUMBER_DEFAULT_REGION = "IE"
+PHONENUMBER_DB_FORMAT = "NATIONAL"
+
 # ID required so Django can handle multiple sites
 SITE_ID = 1
 

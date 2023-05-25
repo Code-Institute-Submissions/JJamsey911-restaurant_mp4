@@ -4,7 +4,7 @@
 
 <section>
     <div class="container">
-        
+
         <div class="row justify-content-center mt-3">
             <!-- Display if user is not logged in -->
             {% if not user.is_authenticated %}
@@ -12,17 +12,17 @@
             <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                     Page</a></button>
             {% else %}
-            <h1>My Bookings:</h1><hr>
+            <h1>My Bookings:</h1>
+            <hr>
             {% for booking in booking_page %}
             <div class="col-md-5">
                 <div class="card mb-5">
-                    <div class="card-body bg-darker grow booking-card">
+                    <div class="card-body bg-darker booking-card">
                         <h2 class="card-title">{{ booking.name }}</h2>
                         <p class="card-subtitle mb-2">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</p><br>
                         <p class="card-subtitle mb-2">Booking status: {{ booking.status }}.</p>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
-                        <p class="card-text">Table: {{booking.table}}</p>
                         <!-- If booking is expired edit and cancel button will be replaced with an expired button -->
                         {% if booking.status == 'booking expired' %}
                         <a href="#" class="btn btn-danger">Expired</a>
@@ -45,7 +45,7 @@
 
         <a href="?page=1">&laquo First</a>
         <a href="?page={{ booking_page.previous_page_number }}">Previous</a>
-        
+
         {% endif %}
         Page {{ booking_page.number }} of {{booking_page.paginator.num_pages }}
 
