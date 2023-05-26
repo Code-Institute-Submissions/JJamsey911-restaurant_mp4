@@ -45,3 +45,16 @@ a:hover {
 .caption {
     background-color: rgb(0, 0, 0, 0.5);
 }
+
+.btn-like {
+    color: #ffff;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #ffff;
+    background: transparent;
+    border: none;
+}
