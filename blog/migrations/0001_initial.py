@@ -79,7 +79,7 @@ class Migration(migrations.Migration):
                 ),
                 ("name", models.CharField(max_length=80)),
                 ("email", models.EmailField(max_length=254)),
-                ("message", models.TextField()),
+                ("body", models.TextField()),
                 ("created_on", models.DateTimeField(auto_now_add=True)),
                 ("approved", models.BooleanField(default=False)),
                 (
