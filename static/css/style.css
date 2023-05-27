@@ -47,14 +47,14 @@ a:hover {
 }
 
 .btn-like {
-    color: #ffff;
+    color: #6c757d;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #ffff;
+    color: #6c757d;
     background: transparent;
     border: none;
 }
