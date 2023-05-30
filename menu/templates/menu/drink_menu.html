@@ -9,12 +9,15 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- Wines Drink Items-->
+        <!--  White Wine Section-->
         <div class="col-sm-8">
-            <hr><h2>Wines</h2><hr>
+            <hr>
+            <h2>White Wines</h2>
+            <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 0 and drink.available == 1 %}
-            <br><h3>{{ drink.drink_name }}</h3>
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
@@ -24,12 +27,15 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- Beers Drink Items-->
+        <!-- Red Wine Sectio-->
         <div class="col-sm-8">
-            <hr><h2>Beers</h2><hr>
+            <hr>
+            <h2>Red Wine</h2>
+            <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 1 and drink.available == 1 %}
-            <br><h3>{{ drink.drink_name }}</h3>
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
@@ -39,12 +45,87 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- Cocktails Drink Items-->
+        <!-- Rose Wine Sectio-->
         <div class="col-sm-8">
-            <hr><h2>Cocktails</h2><hr>
+            <hr>
+            <h2>Rose Wine</h2>
+            <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 2 and drink.available == 1 %}
-            <br><h3>{{ drink.drink_name }}</h3>
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Prosecco Section-->
+        <div class="col-sm-8">
+            <hr>
+            <h2>Prosecco</h2>
+            <hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 3 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Beers Drink Section-->
+        <div class="col-sm-8">
+            <hr>
+            <h2>Beers</h2>
+            <hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 4 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Cocktails Drink Section -->
+        <div class="col-sm-8">
+            <hr>
+            <h2>Cocktails</h2>
+            <hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 5 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Spirits Drink Section -->
+        <div class="col-sm-8">
+            <hr>
+            <h2>Spirits</h2>
+            <hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 6 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
