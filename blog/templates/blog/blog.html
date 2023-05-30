@@ -21,23 +21,29 @@
                             {% if "placeholder" in post.featured_image.url %}
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                                 <img class="card-img-top" src="/static/images/booking_image.jpg">
+                                <h2 class="card-title pt-2">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                <div class="img-flash">
+                                    <p class="author">Author: {{ post.author }}</p>
+                                </div>
+                                <hr />
+                                <p class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                                    {{ post.number_of_likes }}</p>
                             </a>
                             {% else %}
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                                 <img class="card-img-top" src="{{ post.featured_image.url }}">
+                                <h2 class="card-title pt-2">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                <div class="img-flash">
+                                    <p class="author">Author: {{ post.author }}</p>
+                                </div>
+                                <hr />
+                                <p class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                                    {{ post.number_of_likes }}</p>
                             </a>
                             {% endif %}
-                            <div class="image-flash">
-                                <p class="author">Author: {{ post.author }}</p>
-                            </div>
                         </div>
-                        <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                            <h2 class="card-title">{{ post.title }}</h2>
-                            <p class="card-text">{{ post.excerpt }}</p>
-                        </a>
-                        <hr />
-                        <p class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                            {{ post.number_of_likes }}</p>
                     </div>
                 </div>
             </div>

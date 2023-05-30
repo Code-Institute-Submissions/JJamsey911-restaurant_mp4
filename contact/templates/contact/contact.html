@@ -5,64 +5,64 @@
 
 <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-8 mt-5 mb-5">
+        <div class="col-sm-8 mt-5 mb-2">
             <h1 class="text-center">Contact Us</h1>
             <hr>
         </div>
     </div>
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-6">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12 p-5 bg-darker rounded booking-card">
-                            <!-- Display if user is not logged in -->
-                            {% if not user.is_authenticated %}
-                            <h2>Message Us</h2>
-                            <p>Please login to slide into our DM's!</p>
-                            <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to
-                                    Login
-                                    Page</a></button>
-                            {% else %}
-                            <!-- Display form if user is logged in-->
-                            {% if user.is_authenticated %}
-                            <div class="row text-center">
-                                <div class="col-12">
-                                    <h2 class="fw-bold mt-3">Send Message</h2>
-                                    <hr>
-                                </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center mt-2">
+        <div class="col-md-6 ">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 p-3 bg-darker rounded booking-card">
+                        <!-- Display if user is not logged in -->
+                        {% if not user.is_authenticated %}
+                        <h2>Message Us</h2>
+                        <p>Please login!</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to
+                                Login
+                                Page</a></button>
+                        {% else %}
+                        <!-- Display form if user is logged in-->
+                        {% if user.is_authenticated %}
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h2 class="fw-bold mt-3">Send Message</h2>
+                                <hr>
                             </div>
-                            <form method="POST" enctype="multipart/form-data">
-                                {% csrf_token %}
-                                <!-- Contact form -->
-                                {{ contact_form| crispy }}
-
-                                <button class="btn btn-success" type="submit">Submit</button>
-                            </form>
-                            {% endif %}
-                            {% endif %}
-                            <!-- Form Errors from stack overflow -->
-                            {% if contact_form.errors %}
-                            {% for field in contact_form %}
-                            {% for error in field.errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
-                            {% endfor %}
-                            {% endfor %}
-                            {% for error in contact_form.non_field_errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
-                            {% endfor %}
-                            {% endif %}
                         </div>
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <!-- Contact form -->
+                            {{ contact_form| crispy }}
+
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </form>
+                        {% endif %}
+                        {% endif %}
+                        <!-- Form Errors from stack overflow -->
+                        {% if contact_form.errors %}
+                        {% for field in contact_form %}
+                        {% for error in field.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in contact_form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-6 mt-5 mb-5 p-5 bg-darker rounded">
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-6 p-5 bg-darker rounded text-center">
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
@@ -72,23 +72,24 @@
                             <p>Blanchardstown</p>
                             <p>Dulin 15</p>
                             <p>jims@jims.com</p>
-                            <p>+353 (0)1 123456</p>
+                            <p>+353 (01) 0123456</p>
                             <hr>
                             <p><em>Opening Hours:</em></p>
-                            <p><em>Mon - Thurs: 10:00 - 00:30</em></p>
-                            <p><em>Fri - Sun: 10:00 - 02:00</em></p>
-                        </div>
-                        <div class="col-12 rounded">
-                            <!-- Google map -->
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.944025602384!2d-6.215492922451573!3d53.39794117086088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fb12fdfdced%3A0x88f486b11e071761!2sStardust%20Memorial%20Park!5e0!3m2!1sen!2sie!4v1683934821260!5m2!1sen!2sie"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p><em>Mon - Thurs: 11:00 - 00:30</em></p>
+                            <p><em>Fri - Sun: 10:00 - 02:30</em></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="col-12 mb-5 rounded d-flex justify-content-center">
+    <!-- Google map -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.944025602384!2d-6.215492922451573!3d53.39794117086088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fb12fdfdced%3A0x88f486b11e071761!2sStardust%20Memorial%20Park!5e0!3m2!1sen!2sie!4v1683934821260!5m2!1sen!2sie"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-    {% endblock %}
+{% endblock %}
