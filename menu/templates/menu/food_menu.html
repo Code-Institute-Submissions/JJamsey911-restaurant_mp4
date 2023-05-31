@@ -12,10 +12,13 @@
 
         <!-- Starter Food Items-->
         <div class="col-sm-8">
-            <hr><h2>Starters</h2><hr>
+            <hr>
+            <h2>Starters</h2>
+            <hr>
             {% for food in food_list %}
             {% if food.food_type == 0 and food.available == 1 %}
-            <br><h3>{{ food.food_name }}</h3>
+            <br>
+            <h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -28,10 +31,13 @@
 
         <!-- Main Course Food Items-->
         <div class="col-sm-8">
-            <hr><h2>Mains</h2><hr>
+            <hr>
+            <h2>Mains</h2>
+            <hr>
             {% for food in food_list %}
             {% if food.food_type == 1 and food.available == 1 %}
-            <br><h3>{{ food.food_name }}</h3>
+            <br>
+            <h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -43,17 +49,20 @@
     <div class="row justify-content-center">
 
         <!-- Dessert Food Items-->
-        <div class="col-sm-8">
-            <hr><h2>Desserts</h2><hr>
+        <div class="col-sm-8 pb-5">
+            <hr>
+            <h2>Desserts</h2>
+            <hr>
             {% for food in food_list %}
             {% if food.food_type == 2 and food.available == 1 %}
-            <br><h3>{{ food.food_name }}</h3>
+            <br>
+            <h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
-            
+
             {% endif %}
             {% endfor %}
-            
+
         </div>
     </div>
 </div>
