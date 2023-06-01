@@ -20,7 +20,7 @@
                         <div class="image-container">
                             {% if "placeholder" in post.featured_image.url %}
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <img class="card-img-top" src="/static/images/booking_image.jpg">
+                                <img class="card-img-top" src="/static/images/blog_placeholder.jpg">
                                 <h2 class="card-title pt-2">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                                 <div class="img-flash">
@@ -72,7 +72,6 @@
 
             {% endif %}
         </div>
-        {% endif %}
     </section>
 </div>
 {%endblock%}
