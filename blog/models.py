@@ -3,9 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 
-# You must migrate models every time a model has been added, edited or deleted
-
-
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
