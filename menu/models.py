@@ -7,7 +7,7 @@ from django.db import models
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Food and Drinks type so all food and drinks can be categorised
-FOOD_TYPE = ((0, "Starters"), (1, "Mains"), (2, "Desserts"), (3, "New"))
+FOOD_TYPE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
 DRINK_TYPE = (
     (0, "White Wine"),
     (1, "Red Wine"),
@@ -31,7 +31,7 @@ class FoodItem(models.Model):
 
     food_id = models.AutoField(primary_key=True)
     food_name = models.CharField(max_length=50, unique=True)
-    description = models.CharField(max_length=200, unique=True)
+    description = models.CharField(max_length=200, unique=False)
     price = models.FloatField()
     food_type = models.IntegerField(choices=FOOD_TYPE, default=3)
     available = models.BooleanField(default=False)

@@ -10,9 +10,9 @@
     </div>
     <div class="row justify-content-center">
         <!--  White Wine Section-->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>White Wine</h2>
+            <h2 class="text-center">White Wine</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 0 and drink.available == 1 %}
@@ -28,9 +28,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Red Wine Sectio-->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>Red Wine</h2>
+            <h2 class="text-center">Red Wine</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 1 and drink.available == 1 %}
@@ -46,9 +46,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Rose Wine Sectio-->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>Rose Wine</h2>
+            <h2 class="text-center">Rose Wine</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 2 and drink.available == 1 %}
@@ -64,9 +64,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Prosecco Section-->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>Prosecco</h2>
+            <h2 class="text-center">Prosecco</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 3 and drink.available == 1 %}
@@ -82,9 +82,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Beers Drink Section-->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>Beers</h2>
+            <h2 class="text-center">Beers</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 4 and drink.available == 1 %}
@@ -100,9 +100,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Cocktails Drink Section -->
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <hr>
-            <h2>Cocktails</h2>
+            <h2 class="text-center">Cocktails</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 5 and drink.available == 1 %}
@@ -118,9 +118,9 @@
     </div>
     <div class="row justify-content-center">
         <!-- Spirits Drink Section -->
-        <div class="col-sm-8 pb-5">
+        <div class="col-sm-6 pb-5">
             <hr>
-            <h2>Spirits</h2>
+            <h2 class="text-center">Spirits</h2>
             <hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 6 and drink.available == 1 %}
