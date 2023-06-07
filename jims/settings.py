@@ -34,7 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "jims-bar-and-grill.herokuapp.com",
-    "8000-jamsey911-restaurant-mp4-js8fa25eft.us2.codeanyapp.com",
+    "8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu98.gitpod.io",
     "localhost",
 ]
 
