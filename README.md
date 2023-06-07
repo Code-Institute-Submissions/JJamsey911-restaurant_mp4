@@ -1,42 +1,32 @@
-# Jim's | Bar & Grill
+# Jim's Bar & Grill
 
 ![Am I Responsive](#)
 
 **Developer: James Lynch**
 
-💻 [Visit live website](#)
-
-
+💻 [Visit live website](https://jims-bar-and-grill.herokuapp.com/)
 
 ## Table of Contents
-  - [About](#about)
-  - [User Goals](#user-goals)
-  - [Site Owner Goals](#site-owner-goals)
+
+- [Jim's Bar \& Grill](#jims-bar--grill)
+  - [Table of Contents](#table-of-contents)
+    - [About](#about)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
   - [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+        - [Back to top](#back-to-top)
   - [User Stories](#user-stories)
-  - [Design](#design)
-    - [Colours](#colours)
-    - [Fonts](#fonts)
-    - [Structure](#structure)
-      - [Website pages](#website-pages)
-      - [Database](#database)
-    - [Wireframes](#wireframes)
-  - [Technologies Used](#technologies-used)
-  - [Features](#features)
-  - [Validation](#validation)
-  - [Testing](#testing)
-    - [Manual testing](#manual-testing)
-    - [Automated testing](#automated-testing)
-    - [Tests on various devices](#tests-on-various-devices)
-    - [Browser compatibility](#browser-compatibility)
-  - [Bugs](#bugs)
-  - [Heroku Deployment](#heroku-deployment)
-  - [Credits](#credits)
-  - [Acknowledgements](#acknowledgements)
+    - [Users](#users)
+    - [Admin / Authorised User](#admin--authorised-user)
+    - [Site Owner](#site-owner)
+    - [Kanban, Epics \& User Stories](#kanban-epics--user-stories)
+        - [Back to top](#back-to-top-1)
 
 ### About
 
-The Diplomat Bar & Grill is a fictional business where users can create an account, book a table, read a blog and view the food and drinks menu.
+Jom's Bar & Grill is a fictional business where users can create an account, book a table, read a blog and view the food and drinks menu.
 <hr>
 
 ### User Goals
@@ -51,12 +41,13 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 - To attract more business with a well crafted site
 - Provide a modern application with an easy navigation
 - Fully responsive and accessible
-<hr>
 
+<hr>
 
 ## User Experience
 
 ### Target Audience
+
 - Users that wish to book a table for a meal or a party with family and friends
 - Past and new customers for the business
 - Tourists visiting the area that are looking for a meal or a drink or both
@@ -73,7 +64,6 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 - Accessibility
 
 ##### Back to [top](#table-of-contents)<hr>
-
 
 ## User Stories
 
@@ -99,10 +89,8 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 26. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
 27. As a User I can not book a table already booked so that my booking is valid and not double booked (Must have)
 
-
-
-
 ### Admin / Authorised User
+
 9.	As an Admin / Authorised User I can log in so that I can access the back end of the site (Must have)
 10.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business (Should have)
 11. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings (Must have)
@@ -111,14 +99,13 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 20. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for	 (Should have)
 21. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should have)
 
-
-
 ### Site Owner  
+
 23. As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience (Must have)
 24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
 
-
 ### Kanban, Epics & User Stories
+
 - GitHub Kanban was used to track all open user stories
 - Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
@@ -144,6 +131,5 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 ![Kanban finish](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-finish.PNG)
 
 </details>
-
 
 ##### Back to [top](#table-of-contents)<hr>
