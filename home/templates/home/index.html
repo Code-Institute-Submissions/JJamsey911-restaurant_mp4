@@ -149,12 +149,14 @@
                 <li>Date Nights</li>
                 <li>Cocktail Parties</li>
             </ul>
-            <a href="{% url 'blog' %}">
-                <p>Click here to arrange an event!</p>
-            </a>
+            <span class="d-flex justify-content-center">
+                <a href="{% url 'contact' %}" class="btn btn-outline-light btn-floating grow" role="button">
+                    <h5 class="m-0">Click here to arrange an event!</h5>
+                </a>
+            </span>
             <div class="col-12 mt-5">
                 <img src="{% static 'images/cater_image.jpg' %}" class="img-fluid rounded shadow"
-                    alt="A photo of man holding a Mojito">
+                    alt="Multiple drinks being clinked together">
             </div>
         </div>
         <!-- Blog Information -->
@@ -172,9 +174,11 @@
                 <li>Trends</li>
                 <li>Cocktails recipes</li>
             </ul>
-            <a href="{% url 'blog' %}">
-                <p>Click here to go to our Blog Page!</p>
-            </a>
+            <span class="d-flex justify-content-center">
+                <a href="{% url 'blog' %}" class="btn btn-outline-light btn-floating grow" role="button">
+                    <h5 class="m-0">Click here to go to our Blog Page!</h5>
+                </a>
+            </span>
         </div>
     </div>
 </section>
