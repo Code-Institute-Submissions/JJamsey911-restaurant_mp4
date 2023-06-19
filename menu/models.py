@@ -7,8 +7,8 @@ from django.db import models
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Food and Drinks type so all food and drinks can be categorised
-FOOD_TYPE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
-DRINK_TYPE = (
+FOOD_CHOICE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
+DRINK_CHOICE = (
     (0, "White Wine"),
     (1, "Red Wine"),
     (2, "Rose Wine"),
@@ -33,11 +33,11 @@ class FoodItem(models.Model):
     food_name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=200, unique=False)
     price = models.FloatField()
-    food_type = models.IntegerField(choices=FOOD_TYPE, default=3)
+    food_choice = models.IntegerField(choices=FOOD_CHOICE, default=3)
     available = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ["-food_type"]
+        ordering = ["-food_choice"]
 
     def __str__(self):
         return self.food_name
@@ -56,7 +56,7 @@ class DrinkItem(models.Model):
     drink_name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=200, unique=True)
     price = models.FloatField()
-    drink_type = models.IntegerField(choices=DRINK_TYPE, default=3)
+    drink_choice = models.IntegerField(choices=DRINK_CHOICE, default=3)
     available = models.BooleanField(default=False)
 
     class Meta:

@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterField(
             model_name='drinkitem',
-            name='drink_type',
+            name='drink_choice',
             field=models.IntegerField(choices=[(0, 'White Wine'), (1, 'Red Wine'), (2, 'Beers'), (3, 'Cocktails'), (4, 'New')], default=3),
         ),
     ]

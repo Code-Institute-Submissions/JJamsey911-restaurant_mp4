@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('drink_name', models.CharField(max_length=50, unique=True)),
                 ('description', models.CharField(max_length=200, unique=True)),
                 ('price', models.FloatField()),
-                ('drink_type', models.IntegerField(choices=[(0, 'Wines'), (1, 'Beers'), (2, 'Cocktails'), (3, 'New')], default=3)),
+                ('drink_choice', models.IntegerField(choices=[(0, 'Wines'), (1, 'Beers'), (2, 'Cocktails'), (3, 'New')], default=3)),
                 ('available', models.BooleanField(default=False)),
             ],
             options={
@@ -32,11 +32,11 @@ class Migration(migrations.Migration):
                 ('food_name', models.CharField(max_length=50, unique=True)),
                 ('description', models.CharField(max_length=200, unique=True)),
                 ('price', models.FloatField()),
-                ('food_type', models.IntegerField(choices=[(0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'New')], default=3)),
+                ('food_choice', models.IntegerField(choices=[(0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'New')], default=3)),
                 ('available', models.BooleanField(default=False)),
             ],
             options={
-                'ordering': ['-food_type'],
+                'ordering': ['-food_choice'],
             },
         ),
     ]

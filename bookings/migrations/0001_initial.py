@@ -27,10 +27,10 @@ class Migration(migrations.Migration):
             name="Booking",
             fields=[
                 ("booking_id", models.AutoField(primary_key=True, serialize=False)),
-                ("created_date", models.DateTimeField(auto_now_add=True)),
-                ("requested_date", models.DateField()),
+                ("date_created", models.DateTimeField(auto_now_add=True)),
+                ("date_requested", models.DateField()),
                 (
-                    "requested_time",
+                    "time_requested",
                     models.CharField(
                         choices=[
                             ("12:00", "12:00"),
@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
                             ("22:00", "22:00"),
                             ("23:00", "23:00"),
                         ],
-                        default="17:00",
+                        default="18:00",
                         max_length=25,
                     ),
                 ),
@@ -96,8 +96,8 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "ordering": ["-requested_time"],
-                "unique_together": {("requested_date", "requested_time")},
+                "ordering": ["-time_requested"],
+                "unique_together": {("date_requested", "time_requested")},
             },
         ),
     ]
