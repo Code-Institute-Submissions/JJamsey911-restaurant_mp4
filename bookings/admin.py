@@ -21,9 +21,9 @@ class BookingAdmin(admin.ModelAdmin):
         "phone",
         "guest_count",
         "status",
-        "date_requested",
-        "time_requested",
-        "date_created",
+        "requested_date",
+        "requested_time",
+        "created_date",
     )
     list_display = (
         "booking_id",
@@ -32,13 +32,13 @@ class BookingAdmin(admin.ModelAdmin):
         "phone",
         "guest_count",
         "status",
-        "date_requested",
-        "time_requested",
-        "date_created",
+        "requested_date",
+        "requested_time",
+        "created_date",
     )
 
     search_fields = ["guest__name"]
-    list_filter = (("date_requested", DateRangeFilter),)
+    list_filter = (("requested_date", DateRangeFilter),)
     actions = ["confirm_bookings"]
 
     def confirm_bookings(self, request, queryset):

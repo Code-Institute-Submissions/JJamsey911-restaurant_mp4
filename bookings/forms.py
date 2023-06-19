@@ -21,7 +21,7 @@ class BookingForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
 
-    date_requested = forms.DateField(
+    requested_date = forms.DateField(
         widget=forms.DateInput(attrs={"type": "date", "min": datetime.now().date()})
     )
 
@@ -36,6 +36,6 @@ class BookingForm(forms.ModelForm):
             "phone",
             "email",
             "guest_count",
-            "date_requested",
-            "time_requested",
+            "requested_date",
+            "requested_time",
         )

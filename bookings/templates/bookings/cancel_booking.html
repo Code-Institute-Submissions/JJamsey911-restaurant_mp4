@@ -27,8 +27,8 @@
                             <!-- Display form if user is logged in-->
                             {% if user.is_authenticated and user == booking.user %}
                             <h3 class="card-title">{{ booking.name }}</h3>
-                            <p class="card-subtitle mb-2">{{ booking.date_requested }} at
-                                {{ booking.time_requested }}</p><br>
+                            <p class="card-subtitle mb-2">{{ booking.requested_date }} at
+                                {{ booking.requested_time }}</p><br>
                             <p class="card-subtitle mb-2">Booking status: {{ booking.status }}.</p>
                             <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                             <form method="POST">

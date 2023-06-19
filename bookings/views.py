@@ -97,7 +97,7 @@ class BookingList(generic.ListView):
     a particular user has made
     """
     model = Booking
-    queryset = Booking.objects.filter().order_by('-date_created')
+    queryset = Booking.objects.filter().order_by('-created_date')
     template_name = 'booking_list.html'
     paginated_by = 4
 
@@ -110,7 +110,7 @@ class BookingList(generic.ListView):
         today = datetime.datetime.now().date()
 
         for date in booking:
-            if date.date_requested < today:
+            if date.requested_date < today:
                 date.status = 'Booking Expired'
 
         if request.user.is_authenticated:

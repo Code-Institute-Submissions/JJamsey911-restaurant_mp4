@@ -42,10 +42,10 @@ class Booking(models.Model):
     """
 
     booking_id = models.AutoField(primary_key=True)
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_requested = models.DateField()
-    time_requested = models.CharField(
-        max_length=25, choices=time_slots, default="18:00"
+    created_date = models.DateTimeField(auto_now_add=True)
+    requested_date = models.DateField()
+    requested_time = models.CharField(
+        max_length=25, choices=time_slots, default="17:00"
     )
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True
@@ -67,8 +67,8 @@ class Booking(models.Model):
     guest_count = models.IntegerField(choices=seats, default=2)
 
     class Meta:
-        ordering = ["-time_requested"]
-        unique_together = ("date_requested", "time_requested")
+        ordering = ["-requested_time"]
+        unique_together = ("requested_date", "requested_time")
 
     def __str__(self):
         return self.status

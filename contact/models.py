@@ -17,7 +17,7 @@ class Contact(models.Model):
     """
 
     message_id = models.AutoField(primary_key=True)
-    date_created = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="contact_user", null=True
     )
@@ -27,7 +27,7 @@ class Contact(models.Model):
     message = models.TextField()
 
     class Meta:
-        ordering = ["date_created"]
+        ordering = ["created_date"]
 
     def __str__(self):
         return self.name
