@@ -13,9 +13,9 @@ from .models import FoodItem, DrinkItem
 # display and search filters
 @admin.register(FoodItem)
 class FoodAdmin(SummernoteModelAdmin):
-    list_display = ('food_name', 'food_choice', 'price', 'available')
+    list_display = ('food_name', 'food_type', 'price', 'available')
     search_fields = ('food_name', 'description')
-    list_filter = ('available', 'food_choice')
+    list_filter = ('available', 'food_type')
     summernote_fields = ('description')
 
 
@@ -23,7 +23,7 @@ class FoodAdmin(SummernoteModelAdmin):
 # display and search filters
 @admin.register(DrinkItem)
 class DrinkAdmin(SummernoteModelAdmin):
-    list_display = ('drink_name', 'drink_choice', 'price', 'available')
+    list_display = ('drink_name', 'drink_type', 'price', 'available')
     search_fields = ('drink_name', 'description')
-    list_filter = ('available', 'drink_choice')
+    list_filter = ('available', 'drink_type')
     summernote_fields = ('description')
