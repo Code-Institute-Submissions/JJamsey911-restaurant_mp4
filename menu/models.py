@@ -64,3 +64,11 @@ class DrinkItem(models.Model):
 
     def __str__(self):
         return self.drink_name
+
+
+
+
+
+
+
+
