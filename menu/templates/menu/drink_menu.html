@@ -15,7 +15,7 @@
             <h2 class="text-center">White Wine</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 0 and drink.available == 1 %}
+            {% if drink.drink_type == 0 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -27,13 +27,13 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- Red Wine Sectio-->
+        <!-- Red Wine Section-->
         <div class="col-sm-6">
             <hr>
             <h2 class="text-center">Red Wine</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 1 and drink.available == 1 %}
+            {% if drink.drink_type == 1 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -45,13 +45,13 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- Rose Wine Sectio-->
+        <!-- Rose Wine Section-->
         <div class="col-sm-6">
             <hr>
             <h2 class="text-center">Rose Wine</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 2 and drink.available == 1 %}
+            {% if drink.drink_type == 2 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -69,7 +69,7 @@
             <h2 class="text-center">Prosecco</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 3 and drink.available == 1 %}
+            {% if drink.drink_type == 3 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -87,7 +87,7 @@
             <h2 class="text-center">Beers</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 4 and drink.available == 1 %}
+            {% if drink.drink_type == 4 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -105,7 +105,7 @@
             <h2 class="text-center">Cocktails</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 5 and drink.available == 1 %}
+            {% if drink.drink_type == 5 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
@@ -123,7 +123,7 @@
             <h2 class="text-center">Spirits</h2>
             <hr>
             {% for drink in drink_list %}
-            {% if drink.drink_choice == 6 and drink.available == 1 %}
+            {% if drink.drink_type == 6 and drink.available == 1 %}
             <br>
             <h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}

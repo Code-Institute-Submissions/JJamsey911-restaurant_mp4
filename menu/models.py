@@ -3,10 +3,12 @@
 # 3rd party:
 from django.db import models
 
+# Internal
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Food and Drinks type so all food and drinks can be categorised
-FOOD_CHOICE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
-DRINK_CHOICE = (
+FOOD_TYPE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
+DRINK_TYPE = (
     (0, "White Wine"),
     (1, "Red Wine"),
     (2, "Rose Wine"),
@@ -31,11 +33,11 @@ class FoodItem(models.Model):
     food_name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=200, unique=False)
     price = models.FloatField()
-    food_choice = models.IntegerField(choices=FOOD_CHOICE, default=4)
+    food_type = models.IntegerField(choices=FOOD_TYPE, default=4)
     available = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ["-food_choice"]
+        ordering = ["-food_type"]
 
     def __str__(self):
         return self.food_name
@@ -54,7 +56,7 @@ class DrinkItem(models.Model):
     drink_name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=200, unique=True)
     price = models.FloatField()
-    drink_choice = models.IntegerField(choices=DRINK_CHOICE, default=7)
+    drink_type = models.IntegerField(choices=DRINK_TYPE, default=7)
     available = models.BooleanField(default=False)
 
     class Meta:
