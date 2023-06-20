@@ -18,7 +18,7 @@
             {% for food in list_food %}
             {% if food.food_choice == 0 and food.available == 1 %}
             <br>
-            <h3>{{ food.food_name }}</h3>
+            <h3>{{ food.name_food }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -37,7 +37,7 @@
             {% for food in list_food %}
             {% if food.food_choice == 1 and food.available == 1 %}
             <br>
-            <h3>{{ food.food_name }}</h3>
+            <h3>{{ food.name_food }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -57,7 +57,7 @@
             {% for food in list_food %}
             {% if food.food_choice == 2 and food.available == 1 %}
             <br>
-            <h3>{{ food.food_name }}</h3>
+            <h3>{{ food.name_food }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -76,7 +76,7 @@
             {% for food in list_food %}
             {% if food.food_choice == 3 and food.available == 1 %}
             <br>
-            <h3>{{ food.food_name }}</h3>
+            <h3>{{ food.name_food }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 

@@ -14,7 +14,7 @@ def menu_food(request):
     """
     list_food = FoodSelection.objects.all()
     return render(
-        request, 'menu/menu_food.html', {'list_food': list_food})
+        request, 'menus/menu_food.html', {'list_food': list_food})
 
 
 def menu_drink(request):
@@ -23,4 +23,4 @@ def menu_drink(request):
     """
     list_drink = DrinkSelection.objects.all()
     return render(
-        request, 'menu/drink_menu.html', {'list_drink': list_drink})
+        request, 'menus/menu_drink.html', {'list_drink': list_drink})
