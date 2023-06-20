@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-5 mb-5">
+            <h1 class="text-center">Drinks Menu</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!--  White Wine Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">White Wine</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 0 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Red Wine Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">Red Wine</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 1 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Rose Wine Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">Rose Wine</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 2 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Prosecco Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">Prosecco</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 3 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Beers Drink Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">Beers</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 4 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Cocktails Drink Section -->
+        <div class="col-sm-6">
+            <hr>
+            <h2 class="text-center">Cocktails</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 5 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Spirits Drink Section -->
+        <div class="col-sm-6 pb-5">
+            <hr>
+            <h2 class="text-center">Spirits</h2>
+            <hr>
+            {% for drink in list_drink %}
+            {% if drink.drink_choice == 6 and drink.available == 1 %}
+            <br>
+            <h3>{{ drink.drink_name }}</h3>
+            {{ drink.description | safe }} €{{ drink.price }}
+            <br>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}

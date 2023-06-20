@@ -23,7 +23,7 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("", include("contact.urls")),
     path("", include("blog.urls")),
-    path("", include("menu.urls")),
+    path("", include("menus.urls")),
     path("", include("bookings.urls")),
 
 ]

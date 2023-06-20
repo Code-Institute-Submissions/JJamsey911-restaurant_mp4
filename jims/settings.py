@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     "phonenumber_field",
     "rangefilter",
     "home",
-    "menu",
+    "menus",
     "bookings",
     "blog",
     "contact",
