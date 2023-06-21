@@ -40,7 +40,7 @@ class FoodSelection(models.Model):
         ordering = ["-food_choice"]
 
     def __str__(self):
-        return self.food_name
+        return self.name_food
 
 
 # Model for Drink items
@@ -63,4 +63,4 @@ class DrinkSelection(models.Model):
         ordering = ["-available"]
 
     def __str__(self):
-        return self.drink_name
+        return self.name_drink
