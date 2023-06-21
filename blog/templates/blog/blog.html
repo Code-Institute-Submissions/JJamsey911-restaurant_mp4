@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Blog Header -->
 <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-2">
@@ -12,44 +13,48 @@
 
     <!-- Blog Entries Column -->
     <section class="container">
-        <div class="row d-flex my-5 justify-content-evenly text-center">
+        <div class="row">
             {% for post in post_list %}
-            <div class="col-md-4 grow rounded">
-                <div class="card mb-4 h-100">
+            <section class="col-sm-12 col-md-6 col-lg-4 grow rounded text-center g-4">
+                <div class="card h-100">
                     <div class="card-body">
-                        <div class="image-container">
-                            {% if "placeholder" in post.featured_image.url %}
-                            <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <img class="card-img-top" src="/static/images/blog_placeholder.jpg">
-                                <h2 class="card-title pt-2">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
+                        {% if "placeholder" in post.featured_image.url %}
+                        <a href="{% url 'post_detail' post.slug  %}" class="post-link">
+                            <img class="card-img-top" src="/static/images/blog_placeholder.jpg">
+                            <h4 class="card-title pt-4">{{ post.title }}</h4>
+                            <hr>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                            <div class="card-footer border-0">
+                                <hr />
                                 <div class="img-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
+                                <h6 class="h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                                    {{ post.number_of_likes }}</h6>
+                            </div>
+                        </a>
+                        {% else %}
+                        <a href="{% url 'post_detail' post.slug  %}" class="post-link">
+                            <img class="card-img-top" src="{{ post.featured_image.url }}">
+                            <h4 class="card-title pt-4">{{ post.title }}</h4>
+                            <hr>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                            <div class="card-footer border-0">
                                 <hr />
-                                <p class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                    {{ post.number_of_likes }}</p>
-                            </a>
-                            {% else %}
-                            <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <img class="card-img-top" src="{{ post.featured_image.url }}">
-                                <h2 class="card-title pt-2">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
                                 <div class="img-flash">
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
-                                <hr />
-                                <p class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                    {{ post.number_of_likes }}</p>
-                            </a>
-                            {% endif %}
-                        </div>
+                                <h6 class="h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                                    {{ post.number_of_likes }}</h6>
+                            </div>
+                        </a>
                     </div>
+                    {% endif %}
                 </div>
-            </div>
-            {% if forloop.counter|divisibleby:2 %}
+            </section>
+            {% if forloop.counter|divisibleby:6 %}
         </div>
-        <div class="row row d-flex my-5 justify-content-evenly text-center">
+        <div class="row  h-100">
             {% endif %}
             {% endfor %}
 
