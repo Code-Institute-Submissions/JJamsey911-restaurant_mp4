@@ -35,9 +35,10 @@ class BookingAdmin(admin.ModelAdmin):
         "requested_date",
         "requested_time",
         "created_date",
+        "email",
     )
 
-    search_fields = ["guest__name"]
+    search_fields = ["name", "email"]
     list_filter = (("requested_date", DateRangeFilter),)
     actions = ["confirm_bookings"]
 
