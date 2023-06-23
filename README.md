@@ -216,11 +216,6 @@ The home page is designed to have all relevanet information easily accessible wi
 - Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
 - Two database model shows all the fields stored in the database
 
-<details><summary>Show diagram</summary>
-<img src="main/docs/database-schema.PNG">
-</details>
-
-
 ##### User Model
 The User Model contains the following:
 - username
@@ -315,7 +310,7 @@ The Contact Model contains the following:
 
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
-- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Bootstrap v5.3](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
