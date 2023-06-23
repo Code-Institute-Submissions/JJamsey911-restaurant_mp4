@@ -1,6 +1,6 @@
 # Jim's Bar & Grill
 
-![Am I Responsive](#)
+![Am I Responsive](docs/amiresponsive.png)
 
 **Developer: James Lynch**
 
@@ -142,3 +142,60 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 </details>
 
 ##### Back to [top](#table-of-contents)<hr>
+
+## Design
+
+### Design Choices
+
+My goal is to create a welcoming yet efficent website so people of all ages feel at ease while they navigate through the content. In order to achieve this, all relevant content is made easy to read in the index with links to the sign up page for any upcoming events that are taking place. Another seperate page to book for a party and another page with all relevant contact information.
+
+### Colour
+ The colour sheme was chosen as a dark blue and dark red theme, and was also aided by colorhexa in which a Split Complementary Color was selected. A light grey and soft yellow was used to give it contrast which was selected through adobe color. A slighly soft red was selected for certain alerts in the events page.
+<br>
+ 
+![Colour scheme](docs/features/color-palette.JPG)
+
+
+### Fonts
+Libre Baskerville was used for the logo and main headings. 
+<br>
+Libre Franklin was used for the sub-heading's and smaller body elements. 
+<br>
+The fonts were chosen because the Libre Baskerville matched some of the illustraitions in the arcade. The match for this font was made through fontjoy.
+<br>
+San-serif was used as my backup.
+
+### Structure
+The page is structured in a simple and recognizable way with it being user friendly so anybody can find it easy to learn. The home page is designed to have all relevanet information once opened. The logo is postioned on the left, navigation on the right and this is shown on all pages in the same layout. The design is created also to collaspe on itself when being viewed in differnt viewports while maintaing all relevant information: 
+- A homepage with sections for the bookings section and upcoming events section
+- A bookings page with relevant information
+- A events page in which in which you can sign up for an upcoming event
+- A contacts page with a message section to contact the Arcade
+
+### Wireframes
+
+<details><summary>Home</summary>
+<img src="docs/wireframes/home.png">
+(docs/features/kanban-1.png)
+</details>
+<details><summary>Menu</summary>
+<img src="docs/wireframes/menu.png">
+</details>
+<details><summary>Blog</summary>
+<img src="docs/wireframes/blog.png">
+</details>
+<details><summary>Reservations</summary>
+<img src="docs/wireframes/reservations.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/contact.png">
+</details>
+<details><summary>Register</summary>
+<img src="docs/wireframes/register.png">
+</details>
+<details><summary>Log In/Details</summary>
+<img src="docs/wireframes/log_in_details.png">
+</details>
+<details><summary>404</summary>
+<img src="docs/wireframes/page_404.png">
+</details>
