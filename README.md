@@ -149,7 +149,7 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 
 ### Design Choices
 
-My goal is to create a welcoming yet efficent website so people of all ages feel at ease while they navigate through the content. In order to achieve this, all relevant content is made easy to read in the index with links to the sign up page for any upcoming events that are taking place. Another seperate page to book for a party and another page with all relevant contact information.
+My goal is to create a simple and efficent website so all features are easily accessible. In order to achieve this, all pages are responive and labeled. All content is made easy to read with links to features clearly visible without being excessive.
 
 ### Colour
 The colour sheme was chosen as a dark red and black theme in which i was aided by Adobe Color by using their Split Complementary Color feature. A light grey and simple white was used to give it contrast which was selected also through adobe color. A slighly dark grey was selected for certain elements in the events page.
@@ -168,11 +168,20 @@ The fonts chosen because of the contrast between them with Kanit's loopless lett
 San-serif was used as my backup.
 
 ### Structure
-The page is structured in a simple and recognizable way with it being user friendly so anybody can find it easy to learn. The home page is designed to have all relevanet information once opened. The logo is postioned on the left, navigation on the right and this is shown on all pages in the same layout. The design is created also to collaspe on itself when being viewed in differnt viewports while maintaing all relevant information: 
-- A homepage with sections for the bookings section and upcoming events section
-- A bookings page with relevant information
-- A events page in which in which you can sign up for an upcoming event
-- A contacts page with a message section to contact the Arcade
+The home page is designed to have all relevanet information easily accessible with all relevent navigation clearly visible. The logo is postioned on the left, navigation on the right and this is shown on all pages in the same layout. The design is created also to be responsive on all viewports while maintaing all relevant information: 
+- Homepage with a hero image with login details/bookings anchor. Cards are also used with details and links to other pages of the site.
+- Food menu has the current list of all available foods from the database sorted by different sections of the menu
+- Drinks menu has the current list of all available drinks from the database sorted by different sections of the menu
+- Blog page has a paginated list of blogs posted by an admin or authorised user, 6 per page
+- Blog expanded displays a blog the user has selected so they can read the blog, if they are logged in they can also leave a comment or like the comment which will then need to be approved before it is displayed.
+- Reservations page allows registered users to book a table , date requested, time requested and guest count
+- My bookings displays all confirmed reservations for the user that they have made
+- My bookings page aloso lets users edit or cancel any confirmed reservations made
+- Cancel booking allows the user to cancel the booking which will then delete it from the database
+- A contacts page with a message section, the address and a map should the user need to contact the restaurant
+- Login / Logout allows users to login to make bookings, view, edit, and delete bookings
+- Register section allows to have their details stored for easier access to interact with sections of the site
+- 404 page is displayed when a 404 error is raised
 
 ### Wireframes
 
@@ -201,3 +210,129 @@ The page is structured in a simple and recognizable way with it being user frien
 <details><summary>404</summary>
 <img src="docs/wireframes/page_404.png">
 </details>
+
+#### Database
+
+- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Two database model shows all the fields stored in the database
+
+<details><summary>Show diagram</summary>
+<img src="main/docs/database-schema.PNG">
+</details>
+
+
+##### User Model
+The User Model contains the following:
+- username
+- first_name
+- last_name
+- email
+- password
+- groups
+- user_permissions
+- is_staff
+- is_active
+- is_superuser
+- last_login
+- date_joined
+
+##### FoodItem Model
+The FoodItem Model contains the following:
+- food_id
+- food_name
+- description
+- price
+- food_type
+- available
+
+##### DrinkItem Model
+The DrinkItem Model contains the following:
+- drink_id
+- drink_name
+- description
+- price
+- drink_type
+- available
+
+##### Booking Model
+The Booking Model contains the following:
+- booking_id (PrimaryKey)
+- created_date
+- requested_date
+- requested_time
+- guest (ForeignKey)
+- email
+- phone
+- status
+- seats
+- guest_count
+
+##### Post Model
+The Post Model contains the following:
+- title
+- slug
+- author (ForeignKey)
+- featured_image
+- post_id (PrimaryKey)
+- excerpt
+- updated_date
+- content
+- created_date
+- status
+- likes
+
+##### Comment Model
+The Comment Model contains the following:
+- post (ForeignKey)
+- name
+- email
+- message
+- created_on
+- approved
+
+##### Contact Model
+The Contact Model contains the following:
+- message_id (PrimaryKey)
+- created_date
+- user (ForeignKey) 
+- name (ForeignKey)
+- email (ForeignKey)
+- phone (ForeignKey)
+- message
+
+## Technologies Used
+
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Bootstrap 5
+- Python
+- Django
+
+
+### Libraries & Tools
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [jQuery](https://jquery.com)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
+
+##### Back to [top](#table-of-contents)
