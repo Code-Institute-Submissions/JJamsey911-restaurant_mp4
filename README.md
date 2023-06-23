@@ -141,6 +141,8 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 
 </details>
 
+<hr>
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Design
@@ -150,18 +152,18 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 My goal is to create a welcoming yet efficent website so people of all ages feel at ease while they navigate through the content. In order to achieve this, all relevant content is made easy to read in the index with links to the sign up page for any upcoming events that are taking place. Another seperate page to book for a party and another page with all relevant contact information.
 
 ### Colour
- The colour sheme was chosen as a dark blue and dark red theme, and was also aided by colorhexa in which a Split Complementary Color was selected. A light grey and soft yellow was used to give it contrast which was selected through adobe color. A slighly soft red was selected for certain alerts in the events page.
+The colour sheme was chosen as a dark red and black theme in which i was aided by Adobe Color by using their Split Complementary Color feature. A light grey and simple white was used to give it contrast which was selected also through adobe color. A slighly dark grey was selected for certain elements in the events page.
 <br>
  
-![Colour scheme](docs/features/color-palette.JPG)
+![Colour scheme](docs/color-palette.png)
 
 
 ### Fonts
-Libre Baskerville was used for the logo and main headings. 
+Kanit was used for the logo, heading and sub-heading's. 
 <br>
-Libre Franklin was used for the sub-heading's and smaller body elements. 
+Martel Sans was used for smaller body elements and navbar . 
 <br>
-The fonts were chosen because the Libre Baskerville matched some of the illustraitions in the arcade. The match for this font was made through fontjoy.
+The fonts chosen because of the contrast between them with Kanit's loopless lettering matching Martel Sans' fluidity. The match for this font was made through fontjoy.
 <br>
 San-serif was used as my backup.
 
