@@ -10,22 +10,24 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5 {
-    font-weight: 400;
+h4 {
     color: #CED4DA;
+    font-family: 'Kanit', sans-serif;
+}
+
+.button-contact,
+.button-blog,
+.button-menu {
     font-family: 'Kanit', sans-serif;
 }
 
 a {
     color: #CED4DA;
     text-decoration: none;
-    font-weight: 400;
 }
 
 .nav-link {
     font-size: 24px;
-    font-weight: 400;
 }
 
 .card {
