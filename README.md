@@ -331,3 +331,213 @@ The Contact Model contains the following:
   - [Wave Validator](https://wave.webaim.org/)
 
 ##### Back to [top](#table-of-contents)
+
+##### Back to [top](#table-of-contents)
+
+
+## Features
+
+### Home page
+- Home page includes nav bar, main body and a footer
+
+
+<details><summary>See feature images</summary>
+
+![Home page](docs/features/home_page.png)
+</details>
+
+
+### Logo & Navigation
+- Custom logo for the business
+- Fully Responsive
+- On small screens switches to hamburger menu
+- Indicates login/logout in status
+- displayed on all pages
+
+<details><summary>See feature images</summary>
+
+![Navigation Bar](docs/features/fnav_bar_login.png)
+![Navigation Bar](docs/features/nav_bar_bookings.png)
+![Navigation Bar](docs/features/nav_bar_hamburger.png)
+</details>
+
+
+### Footer
+- Contains social media links and copyright
+- displayed across all pages
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/features/footer.png)
+</details>
+
+
+### Sign up / Register
+- Allow users to register an acoount
+- Username and password is required, email is optional
+
+<details><summary>See feature images</summary>
+
+![Register](docs/features/sign_up.png)
+</details>
+
+
+### Login
+- User can login to create a booking, view bookings, edit and delete bookings
+
+<details><summary>See feature images</summary>
+
+![Login](docs/features/sign_in.png)
+![Login](docs/features/sign_in_2.png)
+</details>
+
+
+### Logout
+- Allows the user to securely log out
+- Ask user if they are sure they want to log out
+
+<details><summary>See feature images</summary>
+
+![Logout](docs/features/sign_out.png)
+</details>
+
+
+### Book
+- Allows the user to book a table using the booking form
+- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
+
+<details><summary>See feature images</summary>
+
+![Book](docs/features/reservations.png)
+![Book](docs/features/reservations_error.png)
+![Book](docs/features/reservations_double_booking.png)
+</details>
+
+
+### My Bookings
+- Allows the user to see all their bookings in a paginated layout, 4 per page
+- If the booking is older than today it is automatically expired for the user
+- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
+
+<details><summary>See feature images</summary>
+
+![My Bookings](docs/features/my_bookings.png)
+</details>
+
+
+### Edit Booking
+- Allows the user to edit their booking to another date, time, guest count and table
+<details><summary>See feature images</summary>
+
+![Edit Booking](docs/features/edit_booking.png
+![ImaEdit Bookingge](docs/features/edit_booking_error.png)
+</details>
+
+
+### Cancel Booking 
+- Allows the user to cancel their booking, asks user are they sure
+  
+<details><summary>See feature images</summary>
+
+![Cancel Booking](docs/features/fcancel_booking.png)
+</details>
+
+
+### Food Menu
+- The food menu displays all available foods on the menu
+- Menu is seperated by starters, mains and desserts
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete foods via the admin panel
+  
+<details><summary>See feature images</summary>
+
+![Food Menu](docs/features/food_menu.png)
+</details>
+
+
+### Drinks Menu
+- The drinks menu displays all available foods on the menu
+- Menu is seperated by wines, beers and cocktails
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete foods via the admin panel 
+  
+<details><summary>See feature images</summary>
+
+![Drinks Menu](docs/features/drinks_menu.png)
+</details>
+
+
+<!-- ### Blog
+- The blog displays each post made by a staff member
+- Paginations is used to display 4 posts per page
+  
+<details><summary>See feature images</summary>
+
+![Blog](docs/features/feature-blog.PNG)
+</details>
+
+
+### Blog Expanded
+- Expands into the selected blog the user wishes to read
+- Displays a featured image uploaded by the poster
+- If no image is uploaded a default image is then used
+- Registerd user can comment on the blog
+  
+<details><summary>See feature images</summary>
+
+![Blog Expanded](docs/features/feature-blog2.PNG)
+</details>
+
+
+### Comments
+- Comments made are set to pending approval status to ensure nothing bad is displayed
+- Only registered users can comment on a blog post
+- Staff can approve comments via the admin panel on the backend
+  
+<details><summary>See feature images</summary>
+
+![Comments](docs/features/feature-comments.PNG)
+</details> -->
+
+<!-- ### Likes
+- Likes made are set to pending approval status to ensure nothing bad is displayed
+- Only registered users can like a blog post
+  
+<details><summary>See feature images</summary>
+
+![Comments](docs/features/blog_like.png)
+</details>  -->
+
+
+### Contact Us
+- Registered users can DM staff via the message box
+- Contact info such as, phone, email, and address is displayed
+- A Google Map is embedded with the address for users to use
+  
+<details><summary>See feature images</summary>
+
+![Contact Us](docs/features/contact_message.png)
+![Contact Us](docs/features/contact_address.png)
+![Contact Us](docs/features/contact_map.png)
+</details>
+
+
+### Social Media Links
+- A logo and link is used for each social media displayed
+- All links open in a new tab to ensure user is not directed away from the business
+- Displayed on all pages
+  
+<details><summary>See feature images</summary>
+
+![Social Media Links](docs/features/social_media.png)
+</details>
+
+
+### Pagination
+- Pagination is used on the bookings list and the blog page
+- Ensures the page is kept tidy as only 4 items are displayed per page
+  
+<details><summary>See feature images</summary>
+
+![Pagination](docs/features/pagination.png)
+</details>
