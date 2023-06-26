@@ -339,6 +339,7 @@ The Contact Model contains the following:
 
 ### Home page
 - Home page includes nav bar, main body and a footer
+- User stories covered: 
 
 
 <details><summary>See feature images</summary>
@@ -348,23 +349,24 @@ The Contact Model contains the following:
 
 
 ### Logo & Navigation
-- Custom logo for the business
-- Fully Responsive
-- On small screens switches to hamburger menu
-- Indicates login/logout in status
-- displayed on all pages
+- Custom logo is displayed
+- Fully Responsive layout when viewed on differnt viewports
+- Provides a logged in/out status
+- Featured on all pages
+- User stories covered: 
 
 <details><summary>See feature images</summary>
 
-![Navigation Bar](docs/features/fnav_bar_login.png)
+![Navigation Bar](docs/features/nav_bar_login.png)
 ![Navigation Bar](docs/features/nav_bar_bookings.png)
 ![Navigation Bar](docs/features/nav_bar_hamburger.png)
 </details>
 
 
 ### Footer
-- Contains social media links and copyright
-- displayed across all pages
+- Featured on all pages
+- Consists of all social media links
+- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -373,8 +375,9 @@ The Contact Model contains the following:
 
 
 ### Sign up / Register
-- Allow users to register an acoount
-- Username and password is required, email is optional
+- Allows users to sign up or register an account
+- Password and username is required
+- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -383,7 +386,8 @@ The Contact Model contains the following:
 
 
 ### Login
-- User can login to create a booking, view bookings, edit and delete bookings
+- User can login to advantage of a number of features when logged in
+- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -394,7 +398,8 @@ The Contact Model contains the following:
 
 ### Logout
 - Allows the user to securely log out
-- Ask user if they are sure they want to log out
+- Prompt displays asking user to confirm if they want to log out
+- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -402,22 +407,26 @@ The Contact Model contains the following:
 </details>
 
 
-### Book
-- Allows the user to book a table using the booking form
-- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
+### Reservations
+- Allows the user to book a table using the reservation form
+- A prompt is displayed if incorrect or invalid data is posted
+- User stories covered:
 
 <details><summary>See feature images</summary>
 
-![Book](docs/features/reservations.png)
-![Book](docs/features/reservations_error.png)
-![Book](docs/features/reservations_double_booking.png)
+![Reservations](docs/features/reservations.png)
+![Reservations](docs/features/reservations_error.png)
+![Reservations](docs/features/reservations_double_booking.png)
 </details>
 
 
 ### My Bookings
-- Allows the user to see all their bookings in a paginated layout, 4 per page
-- If the booking is older than today it is automatically expired for the user
-- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
+- Users can view all valid bookings pagianted in a 6 card layout 
+- Bookings are automatically expired when the date and time goes passed the current date
+- The staus of the booking is displayed
+- User stories covered:
+
+
 
 <details><summary>See feature images</summary>
 
@@ -426,28 +435,31 @@ The Contact Model contains the following:
 
 
 ### Edit Booking
-- Allows the user to edit their booking to another date, time, guest count and table
+- Users can edit their booking to another date, time and number of guests
+- User stories covered:
+
 <details><summary>See feature images</summary>
 
-![Edit Booking](docs/features/edit_booking.png
-![ImaEdit Bookingge](docs/features/edit_booking_error.png)
+![Edit Booking](docs/features/edit_booking.png)
+![Edit Booking Error](docs/features/edit_booking_error.png)
 </details>
 
 
 ### Cancel Booking 
-- Allows the user to cancel their booking, asks user are they sure
+- Users can cancel their booking and gives a prompt to confirm
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
-![Cancel Booking](docs/features/fcancel_booking.png)
+![Cancel Booking](docs/features/cancel_booking.png)
 </details>
 
 
 ### Food Menu
-- The food menu displays all available foods on the menu
-- Menu is seperated by starters, mains and desserts
-- Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel
+- All available food items are displayed
+- Menu is seperated in sections
+- Admin/Authorised users can add, edit and delete items
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -456,10 +468,10 @@ The Contact Model contains the following:
 
 
 ### Drinks Menu
-- The drinks menu displays all available foods on the menu
-- Menu is seperated by wines, beers and cocktails
-- Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel 
+- All available drink items are displayed
+- Menu is seperated into differnet sections
+- Admin/Authorised users can add, edit and delete items
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -468,8 +480,9 @@ The Contact Model contains the following:
 
 
 <!-- ### Blog
-- The blog displays each post made by a staff member
-- Paginations is used to display 4 posts per page
+- Blog posts are displayed 
+- All blog posts are organised into a pagianted format for every 6 posts
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -478,10 +491,12 @@ The Contact Model contains the following:
 
 
 ### Blog Expanded
-- Expands into the selected blog the user wishes to read
-- Displays a featured image uploaded by the poster
+- Blog is displayed
+- An image is displayed at the top
 - If no image is uploaded a default image is then used
 - Registerd user can comment on the blog
+- Registerd user can like the blog
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -490,9 +505,10 @@ The Contact Model contains the following:
 
 
 ### Comments
-- Comments made are set to pending approval status to ensure nothing bad is displayed
-- Only registered users can comment on a blog post
-- Staff can approve comments via the admin panel on the backend
+- Blog comments reuqire approval by admin and will display as pending untill admin review
+- Users must be signed in to comment on a post
+- Approaval of comments must be done through the admin panal
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -500,8 +516,9 @@ The Contact Model contains the following:
 </details> -->
 
 <!-- ### Likes
-- Likes made are set to pending approval status to ensure nothing bad is displayed
+- The number of likes is displayed
 - Only registered users can like a blog post
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -510,9 +527,10 @@ The Contact Model contains the following:
 
 
 ### Contact Us
-- Registered users can DM staff via the message box
-- Contact info such as, phone, email, and address is displayed
-- A Google Map is embedded with the address for users to use
+- Users who are signed in can send a message with the message form
+- Phone, email, address and opening hours are displayed
+- An embedded Google Map is also displayed
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -523,9 +541,10 @@ The Contact Model contains the following:
 
 
 ### Social Media Links
-- A logo and link is used for each social media displayed
-- All links open in a new tab to ensure user is not directed away from the business
-- Displayed on all pages
+- An icon with a link is used for each social media displayed
+- Each link opens in a new tab so the user has access to the website after being redirected
+- Featured on all pages
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -534,10 +553,18 @@ The Contact Model contains the following:
 
 
 ### Pagination
-- Pagination is used on the bookings list and the blog page
-- Ensures the page is kept tidy as only 4 items are displayed per page
+- The blog post displays and the booking list both use pagination
+- Ensures a consistant and organised display is shown with only 6 itemsa per page
+- User stories covered:
   
 <details><summary>See feature images</summary>
 
 ![Pagination](docs/features/pagination.png)
 </details>
+
+<!-- ### 404 page
+- A custom 404 page takes away the confusion of not landing on the page they had intended to land on.
+- User stories covered: 
+
+![404 image](docs/features/image_404.png)
+</details> -->
