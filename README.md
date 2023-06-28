@@ -577,7 +577,7 @@ The W3C Jigsaw CSS Validation Service
 ![CSS Validation](docs/validation/css.png)
 </details><hr>
 
-### JavaScript Validation
+<!-- ### JavaScript Validation
 JSHint JS Validation Service
 
 <details><summary>Script.js</summary>
@@ -729,4 +729,116 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 
 <details><summary>views.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-views.PNG">
+</details><hr> -->
+
+
+### Lighthouse
+
+Performance, best practices and SEO was tested using Lighthouse.
+
+#### Desktop
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-index.PNG">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-signup.PNG">
+</details>
+
+<details><summary>Login</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-login.PNG">
+</details>
+
+<details><summary>Logout</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-logout.PNG">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-food-menu.PNG">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-drinks-menu.PNG">
+</details>
+
+<details><summary>Blog</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-blog.PNG">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-blog-expanded.PNG">
+</details>
+
+<details><summary>Book</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-reservations.PNG">
+</details>
+
+<details><summary>Booking List</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-booking-list.PNG">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-edit-booking.PNG">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-cancel-booking.PNG">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-contact-us.PNG">
+</details>
+
+#### Mobile
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-index.PNG">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-signup.PNG">
+</details>
+
+<details><summary>Login</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-login.PNG">
+</details>
+
+<details><summary>Logout</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-logout.PNG">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-food-menu.PNG">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-drinks-menu.PNG">
+</details>
+
+<details><summary>Blog</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-blog.PNG">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-blog-expanded.PNG">
+</details>
+
+<details><summary>Book</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-reservations.PNG">
+</details>
+
+<details><summary>Booking List</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-booking-list.PNG">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-edit-booking.PNG">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-cancel-booking.PNG">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-contact-us.PNG">
 </details><hr>
+
