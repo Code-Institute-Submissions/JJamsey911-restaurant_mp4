@@ -586,7 +586,7 @@ JSHint JS Validation Service
 </details><hr>
 
 ### PEP8 Validation
-PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
+PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down. CI Python Linter
 
 <details><summary>Tool used: Pycodestyle</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle.PNG">
