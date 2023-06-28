@@ -577,7 +577,7 @@ The W3C Jigsaw CSS Validation Service
 ![CSS Validation](docs/validation/css.png)
 </details><hr>
 
-<!-- ### JavaScript Validation
+### JavaScript Validation
 JSHint JS Validation Service
 
 <details><summary>Script.js</summary>
@@ -589,147 +589,147 @@ JSHint JS Validation Service
 PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down. CI Python Linter
 
 <details><summary>Tool used: Pycodestyle</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle.PNG">
+<img src="docs/validation/pep8/.png">
 </details>
 
-<hr><summary>Bar & Grill</summary><hr>
+<hr><summary>Menus</summary><hr>
 
 
 <details><summary>Admin.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-admin.PNG">
+<img src="docs/validation/pep8/menu_admin.png">
 </details>
 
 <details><summary>models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-models.PNG">
+<img src="docs/validation/pep8/menu_models.png">
 </details>
 
 <details><summary>urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-urls.PNG">
+<img src="docs/validation/pep8/menu_urls.png">
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-views.PNG">
+<img src="docs/validation/pep8/menu_views.png">
 </details>
 
 <details><summary>test_models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-test-models.PNG">
+<img src="docs/validation/pep8/menu_test_models.png">
 </details>
 
 <details><summary>test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-test-views.PNG">
+<img src="docs/validation/pep8/menu_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-test-urls.PNG">
+<img src="docs/validation/pep8/menu_tes_urls.png">
 </details>
 
 
 <hr><summary>Bookings</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-admin.PNG">
+<img src="docs/validation/pep8/bookings_admin.png">
 </details>
 
 <details><summary>models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-models.PNG">
+<img src="docs/validation/pep8/bookings_models.png">
 </details>
 
 <details><summary>urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-urls.PNG">
+<img src="docs/validation/pep8/bookings_urls.png">
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-views.PNG">
+<img src="docs/validation/pep8/bookings_views.png">
 </details>
 
 <details><summary>test_models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-test-models.PNG">
+<img src="docs/validation/pep8/bookings_test_models.png">
 </details>
 
 <details><summary>test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-test-views.PNG">
+<img src="docs/validation/pep8/bookings_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-test-urls.PNG">
+<img src="docs/validation/pep8/bookings_test_url.png">
 </details>
 
 <details><summary>forms.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-forms.PNG">
+<img src="docs/validation/pep8/bookings_forms.png">
 </details>
 
 
 <hr><summary>Blog</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-admin.PNG">
+<img src="docs/validation/pep8/blog_admin.png">
 </details>
 
 <details><summary>models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-models.PNG">
+<img src="docs/validation/pep8/blog_models.png">
 </details>
 
 <details><summary>urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-urls.PNG">
+<img src="docs/validation/pep8/blog_urls.png">
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-views.PNG">
+<img src="docs/validation/pep8/blog_views.png">
 </details>
 
 <details><summary>test_models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-test-models.PNG">
+<img src="docs/validation/pep8/blog_test_models.png">
 </details>
 
 <details><summary>test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-test-views.PNG">
+<img src="docs/validation/pep8/blog_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-test-urls.PNG">
+<img src="docs/validation/pep8/blog_test_urls.png">
 </details>
 
 <details><summary>forms.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-forms.PNG">
+<img src="docs/validation/pep8/blog_forms.png">
 </details>
 
 
 <hr><summary>Contact</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-admin.PNG">
+<img src="docs/validation/pep8/contact_admin.png">
 </details>
 
 <details><summary>models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-models.PNG">
+<img src="docs/validation/pep8/contact_models.png">
 </details>
 
 <details><summary>urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-urls.PNG">
+<img src="docs/validation/pep8/contact_urls.png">
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-views.PNG">
+<img src="docs/validation/pep8/contact_views.png">
 </details>
 
 <details><summary>test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-test-views.PNG">
+<img src="docs/validation/pep8/contact_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-test-urls.PNG">
+<img src="docs/validation/pep8/contact_test_urls.png">
 </details>
 
 
 <hr><summary>Home</summary><hr>
 
 <details><summary>urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-urls.PNG">
+<img src="docs/validation/pep8/home_urls.png">
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-views.PNG">
-</details><hr> -->
+<img src="docs/validation/pep8/home_views.png">
+</details><hr>
 
 
 ### Lighthouse

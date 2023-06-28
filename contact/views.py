@@ -49,7 +49,11 @@ class ContactMessage(View):
             contact_form = ContactForm(initial={"email": email})
         else:
             contact_form = ContactForm()
-        return render(request, "contact/contact.html", {"contact_form": contact_form})
+        return render(
+            request,
+            "contact/contact.html",
+            {"contact_form": contact_form}
+            )
 
     def post(self, request):
         """
@@ -65,4 +69,8 @@ class ContactMessage(View):
             messages.success(request, "Message has been sent")
             return render(request, "contact/received.html")
 
-        return render(request, "contact/contact.html", {"contact_form": contact_form})
+        return render(
+            request,
+            "contact/contact.html",
+            {"contact_form": contact_form}
+            )
