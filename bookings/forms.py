@@ -22,7 +22,12 @@ class BookingForm(forms.ModelForm):
         self.helper = FormHelper(self)
 
     requested_date = forms.DateField(
-        widget=forms.DateInput(attrs={"type": "date", "min": datetime.now().date()})
+        widget=forms.DateInput(
+            attrs={
+                "type": "date",
+                "min": datetime.now().date()
+                }
+            )
     )
 
     phone = PhoneNumberField(
@@ -39,3 +44,4 @@ class BookingForm(forms.ModelForm):
             "requested_date",
             "requested_time",
         )
+

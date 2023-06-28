@@ -7,7 +7,13 @@ from django.db import models
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Food and Drinks type so all food and drinks can be categorised
-FOOD_CHOICE = ((0, "Starters"), (1, "Mains"), (2, "Steaks"), (3, "Desserts"), (4, "New"))
+FOOD_CHOICE = (
+    (0, "Starters"),
+    (1, "Mains"),
+    (2, "Steaks"),
+    (3, "Desserts"),
+    (4, "New")
+)
 DRINK_CHOICE = (
     (0, "White Wine"),
     (1, "Red Wine"),
