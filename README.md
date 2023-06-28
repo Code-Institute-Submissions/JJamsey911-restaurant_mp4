@@ -740,42 +740,55 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <details><summary>Home</summary>
 <img src="docs/validation/lighthouse/home.png">
 </details>
+
 <details><summary>Food Menu</summary>
-<img src="docs/validation/lighthouse/menu.food.png">
+<img src="docs/validation/lighthouse/menu_food.png">
 </details>
+
 <details><summary>Drinks Menu</summary>
 <img src="docs/validation/lighthouse/menu_drink.png">
 </details>
+
 <details><summary>Reservations</summary>
 <img src="docs/validation/lighthouse/reservations.png">
 </details>
+
 <details><summary>Contact</summary>
 <img src="docs/validation/lighthouse/contact.png">
 </details>
+
 <details><summary>My Bookings</summary>
 <img src="docs/validation/lighthouse/bookings.png">
 </details>
+
 <details><summary>Edit Bookings</summary>
 <img src="docs/validation/lighthouse/edit_booking.png">
 </details>
+
 <details><summary>Delete Bookings</summary>
 <img src="docs/validation/lighthouse/delete_booking.png">
 </details>
+
 <details><summary>Blog</summary>
 <img src="docs/validation/lighthouse/blog.png">
 </details>
+
 <details><summary>Blog Details</summary>
 <img src="docs/validation/lighthouse/blog_details.png">
 </details>
+
 <details><summary>Log In</summary>
 <img src="docs/validation/lighthouse/sign_in.png">
 </details>
+
 <details><summary>Log Out</summary>
 <img src="docs/validation/lighthouse/sign_out.png">
 </details>
+
 <details><summary>Register</summary>
 <img src="docs/validation/lighthouse/register.png">
 </details>
+
 <!-- <details><summary>404</summary>
 <img src="docs/validation/page_404.png">
 </details> -->
@@ -784,42 +797,55 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <details><summary>Home</summary>
 <img src="docs/validation/lighthouse/home_mobile.png">
 </details>
+
 <details><summary>Food Menu</summary>
 <img src="docs/validation/lighthouse/food_mobile.png">
 </details>
+
 <details><summary>Drinks Menu</summary>
-<img src="docs/validation/lighthouse/drink.png">
+<img src="docs/validation/lighthouse/drinks_mobile.png">
 </details>
+
 <details><summary>Reservations</summary>
 <img src="docs/validation/lighthouse/reservations_mobile.png">
 </details>
+
 <details><summary>Contact</summary>
 <img src="docs/validation/lighthouse/contact_mobile.png">
 </details>
+
 <details><summary>My Bookings</summary>
 <img src="docs/validation/lighthouse/bookings_mobile.png">
 </details>
+
 <details><summary>Edit Bookings</summary>
 <img src="docs/validation/lighthouse/edit_booking_mobile.png">
 </details>
+
 <details><summary>Delete Bookings</summary>
 <img src="docs/validation/lighthouse/delete_booking_mobile.png">
 </details>
+
 <details><summary>Blog</summary>
 <img src="docs/validation/lighthouse/blog_mobile.png">
 </details>
+
 <details><summary>Blog Details</summary>
 <img src="docs/validation/lighthouse/blog_details_mobile.png">
 </details>
+
 <details><summary>Log In</summary>
 <img src="docs/validation/lighthouse/login_mobile.png">
 </details>
+
 <details><summary>Log Out</summary>
 <img src="docs/validation/lighthouse/logout_mobile.png">
 </details>
+
 <details><summary>Register</summary>
 <img src="docs/validation/lighthouse/register_mobile.png">
 </details>
+
 <!-- <details><summary>404</summary>
 <img src="docs/validation/page_404.png">
 </details> -->

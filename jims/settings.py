@@ -34,11 +34,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "jims-bar-and-grill.herokuapp.com",
-    "8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu100.gitpod.io",
+    "8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu101.gitpod.io",
     "localhost",
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu100.gitpod.io', 'https://www.heroku.com/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu101.gitpod.io', 'https://www.heroku.com/']
 
 # To Prevents 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = "none"
