@@ -582,7 +582,7 @@ JSHint JS Validation Service
 
 <details><summary>Script.js</summary>
 
-![CSS Validation](docs/validation/js.png)
+![CSS Validation](docs/validation/jslint.png)
 </details><hr>
 
 ### PEP8 Validation
