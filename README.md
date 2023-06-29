@@ -326,7 +326,7 @@ The Contact Model contains the following:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
   - [JShint](https://jshint.com/)
-  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [CI Python Linter(PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
 
@@ -585,8 +585,8 @@ JSHint JS Validation Service
 ![CSS Validation](docs/validation/jslint.png)
 </details><hr>
 
-### PEP8 Validation
-PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down. CI Python Linter
+### CI Python Linter
+CI Python Linter Validation Service was used to check the code for PEP8 requirements.
 
 <details><summary>Tool used: Pycodestyle</summary>
 <img src="docs/validation/pep8/.png">
@@ -850,3 +850,126 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="docs/validation/page_404.png">
 </details> -->
 
+### Wave
+WAVE was used to test the websites accessibility.
+
+<details><summary>Home</summary>
+<img src="docs/validation/wave/home.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="docs/validation/wave/register.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="docs/validation/wave/login.png">
+</details>
+
+<!-- <details><summary>Logout</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+<details><summary>Food Menu</summary>
+<img src="docs/validation/wave/food.png">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="docs/validation/wave/drink.png">
+</details>
+
+<!-- <details><summary>Reservations</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+<!-- <details><summary>My Bookings</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+<!-- <details><summary>Edit Booking</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+<!-- <details><summary>Delete Booking</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+<details><summary>Blog</summary>
+<img src="docs/validation/wave/blog.png">
+</details>
+
+<details><summary>Blog Details</summary>
+<img src="docs/validation/wave/blog_details.png">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="docs/validation/wave/contact.png">
+</details>
+
+<!-- <details><summary>404</summary>
+<img src="docs/validation/wave/home.png">
+</details> -->
+
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Testing
+
+1. Manual testing
+2. Automated testing
+
+### Manual testing
+
+1. As a User I can navigate across the site so that I can move to each feature of the site easily
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Home' link in the navigation bar | Homepage will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Register' link in the navigation bar | Sign up page will load| Works as expected |
+| Click on the 'Login' link in the navigation bar | Login page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Food Menu' | Food menu page will load| Works as expected |
+| Click on the 'Blog' link in the navigation bar | Blog page will load| Works as expected |
+| Click on the 'Book' link in the navigation bar | Reservations page will load| Works as expected |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+| Click on the 'My Bookings' link in the navigation bar | Booking list page will load| Works as expected |
+| Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/home_test.png">
+<img src="docs/testing/food_test.png">
+<img src="docs/testing/drink_test.png">
+<img src="docs/testing/blog_test.png">
+<img src="docs/testing/reservations_test.png">
+<img src="docs/testing/contact_test.png">
+<img src="docs/testing/bookings_test.png">
+<img src="docs/testing/login_test.png">
+<img src="docs/testing/logout_test.png">
+<img src="docs/testing/register_test.png">
+
+</details>
+
+2. As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | See test 1 | See test 1 | Works as expected |
+ | Scroll to footer at bottom of page | find footer | Works as expected |
+ | Scroll to footer at bottom of page | find social links | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-11.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-12.PNG">
+
+</details>
+
+3. As a Site Owner I can provide a contact us page so that users can get in touch with my business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
+
+</details>
