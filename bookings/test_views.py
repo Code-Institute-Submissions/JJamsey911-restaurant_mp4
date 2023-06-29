@@ -1,12 +1,7 @@
-# Imports
+# Bookings Views Test
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.test import TestCase, Client
 from django.urls import reverse
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Internal:
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 # test that the correct views are used when requested
@@ -30,3 +25,10 @@ class TestBookingsViews(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "bookings/confirmed.html")
+
+    # def test_booking_list_GET(self):
+    #     response = self.client.get(self.booking_list_url)
+
+    #     self.assertEqual(response.status_code, 200)
+    #     self.assertTemplateUsed(response, "bookings/booking_list.html")
+
