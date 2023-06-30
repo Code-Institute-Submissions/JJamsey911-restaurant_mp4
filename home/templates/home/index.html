@@ -92,41 +92,36 @@
 </section>
 <!-- cards -->
 <section class="container">
+    <!-- Reservations Card -->
     <div class="row d-flex my-5 justify-content-evenly text-center">
-        <div class="col-10 col-md-4 mt-4 grow card shadow">
-            <a href="#" class="text-decoration-none">
-                <img src="{% static 'images/booking_image.jpg' %}" class="card-img-top rounded img-fluid"
-                    alt="A photo of a table setting">
+        <div class="col-10 col-md-4 mt-4 grow card shadow ">
+            <a href="{% url 'reservations' %}" class=" btn btn-outline-light">
+                <div class="row mt-3 mb-3">
+                    <img src="{% static 'images/booking_image.jpg' %}" class="card-img-top rounded img-fluid"
+                        alt="A photo of a table setting">
+                        <p class="pt-2 button-card">Reservations<p>
+                </div>
             </a>
-            <div class="row mt-3 mb-3">
-                <a href="{% url 'reservations' %}">
-                    <h2>Reservations</h2>
-                </a>
-            </div>
         </div>
-
+        <!-- Food Menu Card -->
         <div class="col-10 col-md-4 mt-4 grow card shadow">
-            <a href="#" class="text-decoration-none">
-                <img src="{% static 'images/food_image.jpg' %}" class="card-img-top rounded img-fluid"
-                    alt="A photo of a person eating a meal">
+            <a href="{% url 'menu_food' %}" class="btn btn-outline-light">
+                <div class="row mt-3 mb-3">
+                    <img src="{% static 'images/food_image.jpg' %}" class="card-img-top rounded img-fluid"
+                        alt="A photo of a person eating a meal">
+                        <p class="pt-2 button-card">Food Menu</p>
+                </div>
             </a>
-            <div class="row mt-3 mb-3">
-                <a href="{% url 'menu_food' %}">
-                    <h2>Food Menu</h2>
-                </a>
-            </div>
         </div>
-
+        <!-- Drinks Menu Card -->
         <div class="col-10 col-md-4 mt-4 grow card shadow">
-            <a href="#" class="text-decoration-none">
-                <img src="{% static 'images/drink_image.jpg' %}" class="card-img-top rounded img-fluid"
-                    alt="A photo of a glass of whiskey">
+            <a href="{% url 'menu_drink' %}" class="btn btn-outline-light">
+                <div class="row mt-3 mb-3">
+                    <img src="{% static 'images/drink_image.jpg' %}" class="card-img-top rounded img-fluid"
+                        alt="A photo of a glass of whiskey">
+                        <p class="pt-2 button-card">Drinks Menu</p>
+                </div>
             </a>
-            <div class="row mt-3 mb-3">
-                <a href="{% url 'menu_drink' %}">
-                    <h2>Drinks Menu</h2>
-                </a>
-            </div>
         </div>
     </div>
 </section>
@@ -134,6 +129,7 @@
 <div class="container-fluid">
     <div class="row text-center">
         <p><em>Allow us to look after you, your friends and family.</em></p>
+        <p><em>Good food and great company make for the perfect family dinner.</em></p>
     </div>
 </div>
 <section class="container-fluid">

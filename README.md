@@ -1238,7 +1238,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-<!-- 24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
+24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1248,8 +1248,8 @@ WAVE was used to test the websites accessibility.
 
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-edit-booking2.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table2.PNG">
+<img src="docs/testing/invalid_phone_book.png">
+<img src="docs/testing/drink_view.png">
 
 </details>
 
@@ -1264,6 +1264,6 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-33.PNG">
 
-</details> -->
+</details>
 
 
