@@ -1130,9 +1130,140 @@ WAVE was used to test the websites accessibility.
 | Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.PNG">
+<img src="docs/testing/test_register.png">
 
 
 </details>
+
+16.  As a User I can register to create an account so that my details are stored for faster booking in future
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| See test 15 | See test 15 | Works as expected |
+| Click on the 'Reservations' link in the navigation bar | Find the Reservation form with user email inserted automatically | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/reserve_table.png">
+
+
+</details>
+
+17. As a user I can login so that I can book a table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/log_in.png">
+<img src="docs/testing/log_in_2.png">
+
+
+</details>
+
+18. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| While logged in, view navigation bar | Logout button should be visible | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="docs/testing/view_login.png">
+
+</details>
+
+<!-- 19. As an Admin / Authorised User I can toggle booking confirmation to auto or manual mode so that on busy days manual mode can be used to reduce double bookings
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| User story not implemented | Possible future feature | N/A |
+
+</details> -->
+
+20. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the admin panel, select Bookings / Food, drinks menus | Find search box and filters on displayed page | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="docs/testing/search_bookings.png">
+<img src="docs/testing/search_menu.png">
+
+</details>
+
+21. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the admin panel, select Bookings | Find  filters on displayed right panel of page | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="docs/testing/search_bookings.png">
+
+</details>
+
+22. As a User I can view the site's blog so that I can learn additional information and read articles
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select Blog in navigation panel at top of page | Blog page loads with published Blog posts | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="docs/testing/blog_view.png">
+
+</details>
+
+23. As a User I can view the food and drink menu so that I can decide wether to eat at the business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select Menus then food menu dropdown in navigation panel at top of page | Food Menu page loads | Works as expected |
+| Select Menus then drinks menu dropdown in navigation panel at top of page | Drinks Menu page loads | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="docs/testing/food_view.png">
+<img src="docs/testing/drink_view.png">
+
+</details>
+
+<!-- 24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From Booking page, make a booking with a phone number that is too short | Error message is displayed | Works as expected |
+| From Booking page, make a booking with a date / table that is already booked | Error message is displayed | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-edit-booking2.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table2.PNG">
+
+</details>
+
+25. As a User I can not book a date in the past so that my booking is valid
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the booking page, click requested date calender icon | Calender will open with all dates from yesterday and older greyed out, cannot select | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-33.PNG">
+
+</details> -->
 
 
