@@ -40,8 +40,6 @@ ALLOWED_HOSTS = [
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-jamsey911-restaurantmp4-gdb5dib3tet.ws-eu101.gitpod.io', 'https://www.heroku.com/']
-
 # To Prevents 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
@@ -184,7 +182,7 @@ DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 STATIC_URL = "/static/"
 STATICFILES_STORAGE = "cloudinary_storage.storage.StaticHashedCloudinaryStorage"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
