@@ -24,7 +24,7 @@ time_slots = (
 )
 
 
-# Status options inspired by the JustEat status' when ordering
+# Shows a staus for the user to show if his booking has been accepted
 status_options = (
     ("Awaiting confirmation", "Awaiting Confirmation"),
     ("Booking Confirmed", "Booking Confirmed"),

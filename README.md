@@ -958,8 +958,8 @@ WAVE was used to test the websites accessibility.
  | Scroll to footer at bottom of page | find social links | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-11.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-12.PNG">
+<img src="docs/testing/footer_media.png">
+<img src="docs/testing/footer_copyright.png">
 
 </details>
 
@@ -970,6 +970,169 @@ WAVE was used to test the websites accessibility.
 | Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
+<img src="docs/testing/contact_form.png">
 
 </details>
+
+4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/contact_address_map.png">
+
+</details>
+
+5. As a User I can create a booking by selecting a date and time so that I can reserve my table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Reservations' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/reservation_form.png">
+
+</details>
+
+6. As a User I can update my booking so that I can choose another available time and date
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From 'My Bookings' click 'Edit' on booking to be edited| Find the edit booking form loaded  | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/booking_edit_1.png">
+<img src="docs/testing/booking_edit_2.png">
+
+</details>
+
+7. As a User I can delete my booking so that I can cancel my table reservation
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From 'My Bookings' click 'Cancel' on booking to be cancelled| Find the cancel booking prompt loaded  | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/booking_delete_1.png">
+<img src="docs/testing/booking_delete_2.png">
+
+</details>
+
+8. As a user I can view my booking so that I can remind myself of the date and time I have booked
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'My Bookings' link in the navigation bar | Booking list will display all bookings made| Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/bookings_display.png">
+
+</details>
+
+9. As an Admin / Authorised User I can log in so that I can access the back end of the site
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+
+
+<details><summary></summary>
+<img src="docs/testing/admin_display.png">
+<img src="docs/testing/admin_display_2.png">
+
+
+</details>
+
+10. As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the +Add button beside the Bookings tab in left panel | Booking form is displayed | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/booking_add_1.png">
+<img src="docs/testing/booking_add_2.png">
+
+
+</details>
+
+11. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Bookings button the the left panel, select a booking id | Booking info is displayed | Works as expected |
+| Click Status dropdown | Find different booking status to select and save | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/admin_confirmation_1.png">
+<img src="docs/testing/admin_confirmation_2.png">
+
+
+</details>
+
+12. As an Admin I can login to add or remove items from the food and cocktail menu so that we can add more food and drinks or remove them
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Food Selectios on the left panel, select a Add Food Item | Add food form is displayed | Works as expected |
+| Click on the Drink Selectios on the left panel, select a Add Drink Item | Add drink form is displayed | Works as expected |
+| See test 13 | See test 13 | Works as expected |
+
+
+<details><summary></summary>
+<img src="docs/testing/add_food_1.png">
+<img src="docs/testing/add_food_2.png">
+<img src="docs/testing/add_drink_1.png">
+<img src="docs/testing/add_drink_2.png">
+
+
+</details>
+
+13. As a Admin I can create, read, update and delete food and drinks items from the database so that we can add, remove, rename and view all our food and drinks items
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Food Items / Drink Items on the left panel, select an item by id | Item Form is displayed allowing, editing and deletion, see test 12 for creation |Works as expected |
+
+
+<details><summary></summary>
+<img src="docs/testing/edit_food_drink_1.png">
+<img src="docs/testing/edit_food_drink_2.png">
+
+
+</details>
+
+14. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, cancel a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+
+<details><summary></summary>booking_msg_con
+<img src="docs/testing/booking_msg_con.png">
+<img src="docs/testing/booking_msg_edit.png">
+<img src="docs/testing/booking_msg_delete.png">
+
+</details>
+
+15. As a User I can register as prompted so that I can make a booking if I wish reserve a table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.PNG">
+
+
+</details>
+
+
