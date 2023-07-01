@@ -562,12 +562,12 @@ The Contact Model contains the following:
 ![Pagination](docs/features/pagination.png)
 </details>
 
-<!-- ### 404 page
+### 404 page
 - A custom 404 page takes away the confusion of not landing on the page they had intended to land on.
 - User stories covered: 
 
 ![404 image](docs/features/image_404.png)
-</details> -->
+</details>
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service
@@ -847,7 +847,7 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 </details>
 
 <!-- <details><summary>404</summary>
-<img src="docs/validation/page_404.png">
+<img src="docs/validation/page_404_mobile.png">
 </details> -->
 
 ### Wave
