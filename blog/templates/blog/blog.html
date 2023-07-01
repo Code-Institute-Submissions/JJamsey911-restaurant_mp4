@@ -64,16 +64,16 @@
 
             {% if page_obj.has_previous %}
 
-            <a href="?page=1">&laquo First</a>
-            <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            <a href="?page=1" class="pagination-underline">&laquo First</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="pagination-underline">Previous</a>
 
             {% endif %}
             Page {{ page_obj.number }} of {{page_obj.paginator.num_pages }}
 
             {% if page_obj.has_next %}
 
-            <a href="?page={{ page_obj.next_page_number }}">Next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">Last &raquo</a>
+            <a href="?page={{ page_obj.next_page_number }} " class="pagination-underline">Next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="pagination-underline">Last &raquo</a>
 
             {% endif %}
         </div>
