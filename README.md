@@ -77,38 +77,42 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 
 ### As a website user: 
 
-1. I want a site in which I can view a contact us page to get in touch with the business (Required)
-2. I want a site in which i can view view blog posts so i can read articles and get a better sense of the restaurant (Should have)
-3. I want a site in which i can like a blog post so I  can interact with the restaurant (Should have)
-4. I want a site I can view comments the restaurant's blog posts so I can see what other people thinks about about the posts (Should have)
-5. I want a site I can create and register an account which stores my details for faster bookings (Required)
-6. I want a site I can create a comment for a blog so I can converse with the restaurant and its community (Should have)
-7. I Want a site I can view the amount of likes on a blog post so i can see if the post is highly rated (Should have)
-8. I want a site I can navigate through easily and have all features accessible (Required)
-9. I want a site in which I have full use of all navbar, body, footer and icon features so that I can navigate the site views, forms, access requests, and access socials (Required)
-10. I want a site I can view paginated blog posts so the there's not too much information being shown (Should have)
-11. I want a site i can provide a contact us page so that users can reach out to the business (Required)
-12. I want a site I can not double book a table as it would be invalid (Required)
-13.	I want a site that I can view the opening hours, contact details, an address along with a map so that I know where the business is located and when the business is open along with how to contact them via email, phone and socials (Required)
-14. I want a site I can view a menu option so that I can decide wether to eat at the business (Required)
-15. I want a site in which i am unable to book a table in the past as i would be invalid (Required)
-16. I want a site in which i can view a notifaction so that I know if my action of creation, edit, or deletion of a booking has been confirmed (Required)
-17.	I want a site I can delete my booking so that I can cancel my table reservation (Required)
-18.  I want a site where i can view all my booking requests with the date and time (Required)
-19.	I want a site I can request a booking by selecting a time and date so that I can reserve a table (Required)
-20.	I want a site I can update my booking so that I can choose another available date and time (Required)
-21.	I want a site I can create a booking so that I reserve a table (Required)
-22. I want a site I can view a confirmation of my booking (Required)
+1. I want a site I can navigate through easily and have all features accessible (Required)
+2. I want a site in which I have full use of all navbar, body, footer and icon features so that I can navigate the site views, forms, access requests, and access socials (Required)
+3. I want a site in which I can view a contact us page to get in touch with the business (Required)
+4. I want a site that I can view the opening hours, contact details, an address along with a map so that I know where the business is located and when the business is open along with how to contact them via email, phone and socials (Required)
+5. I want a site I can request a booking by selecting a time and date so that I can reserve a table (Required)
+6. I want a site I can update my booking so that I can choose another available date and time (Required)
+7. I want a site I can delete my booking so that I can cancel my table reservation (Required)
+8. I want a site where i can view all my booking requests with the date and time (Required)
+9. I want a site in which i can view blog posts so i can read articles and get a better sense of the restaurant (Should have)
+10. I want a site in which i can view a notifaction so that I know if my action of creation, edit, or deletion of a booking has been confirmed (Required)
+11. I want a site I can create and register an account which stores my details for faster bookings (Required)
+12. I want a site I can a log in so i can make a reservaton (Required)
+13. I want a site I can that provides a prompt to register before I can reserve a table (Required)
+14. I want a site that provides an indecation if I'm logged in or not
+15. I want a site I can view a menu option so that I can decide wether to eat at the business (Required)
+16. I want a site in which i am unable to book a table in the past as i would be invalid (Required)
+17. I want a site I can not double book a table as it would be invalid (Required)
+18.	I want a site that displays blog post in an organised manor (Should have)
+19.	I want a site I can view comments the restaurant's blog posts so I can see what other people thinks about about the posts (Should have)
+20.	I want a site I can create a comment for a blog so I can converse with the restaurant and its community (Should have)
+21. I want a site in which i can like a blog post so I can interact with the restaurant (Should have)
+22.	I Want a site I can view the amount of likes on a blog post so I can see if the post is highly rated (Should have)
+
 
 ### Admin / Authorised User
 
 1. As an Admin / Authorised User I can acces the backend of the site by logging in (Required)
-2. As an Admin / Authorised User I can manually manage all blog content on site (Required)
-3. As an Admin / Authorised User I can review bookings as to check if any double bookings were registered (Required)
-4. As an Admin / Authorised User I can access the back end of the site to create, edit and delete any of the menu options (Required)
-5. As an Admin / Authorised User I can search through reservations and menu items should i require that information (Should have)
-6. As an Admin / Authorised User I can view filtered bookings based on the name, email and date (Should have)
-7. As an Admin / Authorised User I can manually create, edit or delete a reservation should a customer request (Should have)
+2. As an Admin / Authorised User I can manage Blog posts to maintain details being displayed (Required)
+3. As an Admin / Authorised User I can manage Blog comments to maintain details being displayed (Required)
+4. As an Admin / Authorised User I can review bookings as to check if any double bookings were registered (Required)
+5. As a Admin I can create, read, update and delete food and drinks items from the database so that we can add, remove, rename and view all our food and drinks items
+6. As an Admin / Authorised User I can access the back end of the site to create, edit and delete any of the menu options (Required)
+7. As an Admin / Authorised User I can search through reservations and menu items should i require that information (Should have)
+8. As an Admin / Authorised User I can view filtered bookings based on the name, email and date (Should have)
+9. As an Admin / Authorised User I can manually create, edit or delete a reservation should a customer request (Should have)
+
 
 ### Site Owner  
 
@@ -919,7 +923,7 @@ WAVE was used to test the websites accessibility.
 
 ### Manual testing
 
-1. As a User I can navigate across the site so that I can move to each feature of the site easily
+1. I want a site I can navigate through easily and have all features accessible
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -946,10 +950,10 @@ WAVE was used to test the websites accessibility.
 <img src="docs/testing/login_test.png">
 <img src="docs/testing/logout_test.png">
 <img src="docs/testing/register_test.png">
-
 </details>
 
-2. As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials
+
+2. I want a site in which I have full use of all navbar, body, footer and icon features so that I can navigate the site views, forms, access requests, and access socials
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -960,10 +964,10 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="docs/testing/footer_media.png">
 <img src="docs/testing/footer_copyright.png">
-
 </details>
 
-3. As a Site Owner I can provide a contact us page so that users can get in touch with my business
+
+3. I want a site in which I can view a contact us page to get in touch with the business
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -971,10 +975,10 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="docs/testing/contact_form.png">
-
 </details>
 
-4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials
+
+4. I want a site that I can view the opening hours, contact details, an address along with a map so that I know where the business is located and when the business is open along with how to contact them via email, phone and socials
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -982,10 +986,10 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="docs/testing/contact_address_map.png">
-
 </details>
 
-5. As a User I can create a booking by selecting a date and time so that I can reserve my table
+
+5. I want a site I can request a booking by selecting a time and date so that I can reserve a table
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -993,10 +997,10 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="docs/testing/reservation_form.png">
-
 </details>
 
-6. As a User I can update my booking so that I can choose another available time and date
+
+6. I want a site I can update my booking so that I can choose another available date and time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1005,10 +1009,10 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="docs/testing/booking_edit_1.png">
 <img src="docs/testing/booking_edit_2.png">
-
 </details>
 
-7. As a User I can delete my booking so that I can cancel my table reservation
+
+7. I want a site I can delete my booking so that I can cancel my table reservation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1017,10 +1021,10 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="docs/testing/booking_delete_1.png">
 <img src="docs/testing/booking_delete_2.png">
-
 </details>
 
-8. As a user I can view my booking so that I can remind myself of the date and time I have booked
+
+8. I want a site where i can view all my booking requests with the date and time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1028,10 +1032,176 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="docs/testing/bookings_display.png">
-
 </details>
 
-9. As an Admin / Authorised User I can log in so that I can access the back end of the site
+
+9. As a User I can view the site's blog so that I can learn additional information and read articles
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select Blog in navigation panel at top of page | Blog page loads with published Blog posts | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/blog_view.png">
+</details>
+
+
+10. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, cancel a booking | A message will be displayed upon completion, Javascript makes it disappear after 5 seconds | Works as expected |
+
+<details><summary></summary>booking_msg_con
+<img src="docs/testing/booking_msg_con.png">
+<img src="docs/testing/booking_msg_edit.png">
+<img src="docs/testing/booking_msg_delete.png">
+</details>
+
+
+11.  I want a site I can create and register an account which stores my details for faster bookings
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| See test 15 | See test 15 | Works as expected |
+| Click on the 'Reservations' link in the navigation bar | Find the Reservation form with user email inserted automatically | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/reserve_table.png">
+</details>
+
+
+12. I want a site I can a log in so i can make a reservaton
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/log_in.png">
+<img src="docs/testing/log_in_2.png">
+</details>
+
+13. I want a site I can that provides a prompt to register before I can reserve a table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/test_register.png">
+</details>
+
+
+14. I want a site that provides an indecation if I'm logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| While logged in, view navigation bar | Logout button should be visible | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/view_login.png">
+</details>
+
+
+15. I want a site I can view a menu option so that I can decide wether to eat at the business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select Menus then food menu dropdown in navigation panel at top of page | Food Menu page loads | Works as expected |
+| Select Menus then drinks menu dropdown in navigation panel at top of page | Drinks Menu page loads | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/food_view.png">
+<img src="docs/testing/drink_view.png">
+</details>
+
+
+16. I want a site in which i am unable to book a table in the past as i would be invalid
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the booking page, click requested date calender icon | Calender will open with all dates from yesterday and older greyed out, cannot select | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/previous_date_book.png">
+</details>
+
+
+17. As a User I can not book a table already booked so that my booking is valid and not double booked
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the bookings page, attempt to book a table and date already booked | Error message displays to say booking not possible | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table3.PNG">
+</details>
+
+
+18. I want a site that displays blog post in an organised manor
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select Blog from navigation panel at top of page | Blog page loads, paginated to display only 4 per page | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/pagination_blog.png">
+</details>
+
+19. I want a site I can view comments the restaurant's blog posts so I can see what other people thinks about about the posts
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select a blog Blog from Blog page | Blog loads, Scroll to under the blog post to see comments section | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/comments_blog_location.png">
+<img src="docs/testing/comments_blog.png">
+</details>
+
+20. I want a site I can create a comment for a blog so I can converse with the restaurant and its community
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select a blog Blog from Blog page | Blog loads, Scroll to under the blog post to see comments section | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/comments_blog_location.png">
+<img src="docs/testing/comment_form.png">
+</details>
+
+21. I want a site in which i can like a blog post so I can interact with the restaurant
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select a blog Blog from Blog page | Blog loads, Scroll to under the blog post to see comments section | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/comments_blog_location.png">
+<img src="docs/testing/like_before.png">
+<img src="docs/testing/like_after.png">
+</details>
+
+22. I Want a site I can view the amount of likes on a blog post so I can see if the post is highly rated
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Select a blog Blog from Blog page | Blog loads, Scroll to under the blog post to see comments section | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/comments_blog_location.png">
+<img src="docs/testing/like_before_number.png">
+<img src="docs/testing/like_after_number.png">
+</details>
+
+
+### Admin
+
+1. As an Admin / Authorised User I can log in so that I can access the back end of the site
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1041,25 +1211,33 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="docs/testing/admin_display.png">
 <img src="docs/testing/admin_display_2.png">
-
-
 </details>
 
-10. As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business
+
+2. As an Admin / Authorised User I can manage Blog posts to maintain details being displayed
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
-| Click on the +Add button beside the Bookings tab in left panel | Booking form is displayed | Works as expected |
+| From the admin panel, select posts from the blog section  | Edit, add or delete any blog post | Works as expected |
 
 <details><summary></summary>
-<img src="docs/testing/booking_add_1.png">
-<img src="docs/testing/booking_add_2.png">
-
-
+<img src="docs/testing/blog_admin.png">
+<img src="docs/testing/blog_posts_admin.png">
 </details>
 
-11. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings
+3. As an Admin / Authorised User I can manage Blog comments to maintain details being displayed
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the admin panel, select comments from the blog section  | Add or delete any blog comments | Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/blog_admin.png">
+<img src="docs/testing/blog_comments_admin.png">
+</details>
+
+
+4. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1070,11 +1248,23 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="docs/testing/admin_confirmation_1.png">
 <img src="docs/testing/admin_confirmation_2.png">
-
-
 </details>
 
-12. As an Admin I can login to add or remove items from the food and cocktail menu so that we can add more food and drinks or remove them
+
+5. As a Admin I can create, read, update and delete food and drinks items from the database so that we can add, remove, rename and view all our food and drinks items
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Food Items / Drink Items on the left panel, select an item by id | Item Form is displayed allowing, editing and deletion, see test 12 for creation |Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/edit_food_drink_1.png">
+<img src="docs/testing/edit_food_drink_2.png">
+</details>
+
+
+6. As an Admin / Authorised User I can access the back end of the site to create, edit and delete any of the menu options
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1083,186 +1273,89 @@ WAVE was used to test the websites accessibility.
 | Click on the Drink Selectios on the left panel, select a Add Drink Item | Add drink form is displayed | Works as expected |
 | See test 13 | See test 13 | Works as expected |
 
-
 <details><summary></summary>
 <img src="docs/testing/add_food_1.png">
 <img src="docs/testing/add_food_2.png">
 <img src="docs/testing/add_drink_1.png">
 <img src="docs/testing/add_drink_2.png">
-
-
 </details>
 
-13. As a Admin I can create, read, update and delete food and drinks items from the database so that we can add, remove, rename and view all our food and drinks items
 
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
-| Click on the Food Items / Drink Items on the left panel, select an item by id | Item Form is displayed allowing, editing and deletion, see test 12 for creation |Works as expected |
-
-
-<details><summary></summary>
-<img src="docs/testing/edit_food_drink_1.png">
-<img src="docs/testing/edit_food_drink_2.png">
-
-
-</details>
-
-14. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
-| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
-| From the bookings list page, cancel a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
-
-<details><summary></summary>booking_msg_con
-<img src="docs/testing/booking_msg_con.png">
-<img src="docs/testing/booking_msg_edit.png">
-<img src="docs/testing/booking_msg_delete.png">
-
-</details>
-
-15. As a User I can register as prompted so that I can make a booking if I wish reserve a table
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
-
-<details><summary></summary>
-<img src="docs/testing/test_register.png">
-
-
-</details>
-
-16.  As a User I can register to create an account so that my details are stored for faster booking in future
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| See test 15 | See test 15 | Works as expected |
-| Click on the 'Reservations' link in the navigation bar | Find the Reservation form with user email inserted automatically | Works as expected |
-
-<details><summary></summary>
-<img src="docs/testing/reserve_table.png">
-
-
-</details>
-
-17. As a user I can login so that I can book a table
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
-| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
-
-<details><summary></summary>
-<img src="docs/testing/log_in.png">
-<img src="docs/testing/log_in_2.png">
-
-
-</details>
-
-18. As a user I can see my login status so that I know if I am logged in or not
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| While logged in, view navigation bar | Logout button should be visible | Works as expected |
-
-
-
-<details><summary></summary>
-<img src="docs/testing/view_login.png">
-
-</details>
-
-<!-- 19. As an Admin / Authorised User I can toggle booking confirmation to auto or manual mode so that on busy days manual mode can be used to reduce double bookings
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| User story not implemented | Possible future feature | N/A |
-
-</details> -->
-
-20. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for
+7. As an Admin / Authorised User I can search through reservations and menu items should i require that information
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | From the admin panel, select Bookings / Food, drinks menus | Find search box and filters on displayed page | Works as expected |
 
-
-
 <details><summary></summary>
 <img src="docs/testing/search_bookings.png">
 <img src="docs/testing/search_menu.png">
-
 </details>
 
-21. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day
+
+8. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | From the admin panel, select Bookings | Find  filters on displayed right panel of page | Works as expected |
 
-
-
 <details><summary></summary>
 <img src="docs/testing/search_bookings.png">
-
 </details>
 
-22. As a User I can view the site's blog so that I can learn additional information and read articles
+
+9. As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| Select Blog in navigation panel at top of page | Blog page loads with published Blog posts | Works as expected |
-
-
-
-<details><summary></summary>
-<img src="docs/testing/blog_view.png">
-
-</details>
-
-23. As a User I can view the food and drink menu so that I can decide wether to eat at the business
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Select Menus then food menu dropdown in navigation panel at top of page | Food Menu page loads | Works as expected |
-| Select Menus then drinks menu dropdown in navigation panel at top of page | Drinks Menu page loads | Works as expected |
-
-
+| Visit the admin page https://jims-bar-and-grill.herokuapp.com/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the +Add button beside the Bookings tab in left panel | Booking form is displayed | Works as expected |
 
 <details><summary></summary>
-<img src="docs/testing/food_view.png">
-<img src="docs/testing/drink_view.png">
-
+<img src="docs/testing/booking_add_1.png">
+<img src="docs/testing/booking_add_2.png">
 </details>
 
-24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
+
+### Site Owner
+
+1. As a Site Owner I want to provide a easy to use site with all relevent information displayed while being fully responsive
+
+| Click on the 'Home' link in the navigation bar | Homepage will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Register' link in the navigation bar | Sign up page will load| Works as expected |
+| Click on the 'Login' link in the navigation bar | Login page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Food Menu' | Food menu page will load| Works as expected |
+| Click on the 'Blog' link in the navigation bar | Blog page will load| Works as expected |
+| Click on the 'Book' link in the navigation bar | Reservations page will load| Works as expected |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+| Click on the 'My Bookings' link in the navigation bar | Booking list page will load| Works as expected |
+| Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/home_test.png">
+<img src="docs/testing/food_test.png">
+<img src="docs/testing/drink_test.png">
+<img src="docs/testing/blog_test.png">
+<img src="docs/testing/reservations_test.png">
+<img src="docs/testing/contact_test.png">
+<img src="docs/testing/bookings_test.png">
+<img src="docs/testing/login_test.png">
+<img src="docs/testing/logout_test.png">
+<img src="docs/testing/register_test.png">
+</details>
+
+2. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | From Booking page, make a booking with a phone number that is too short | Error message is displayed | Works as expected |
 | From Booking page, make a booking with a date / table that is already booked | Error message is displayed | Works as expected |
 
-
-
 <details><summary></summary>
 <img src="docs/testing/invalid_phone_book.png">
-<img src="docs/testing/drink_view.png">
-
-</details>
-
-25. As a User I can not book a date in the past so that my booking is valid
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| From the booking page, click requested date calender icon | Calender will open with all dates from yesterday and older greyed out, cannot select | Works as expected |
-
-
-
-<details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-33.PNG">
+<img src="docs/testing/invalid_date_book.png">
 
 </details>
 
