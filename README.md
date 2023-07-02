@@ -1050,8 +1050,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
-| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 5 seconds | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 5 seconds | Works as expected |
 | From the bookings list page, cancel a booking | A message will be displayed upon completion, Javascript makes it disappear after 5 seconds | Works as expected |
 
 <details><summary></summary>booking_msg_con
@@ -1359,4 +1359,142 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
+<!-- ### Automated testing
 
+- Testing was done using the built in Django module, unittest.
+- Coverage was also usesd to generate a report
+
+
+<details><summary>Bar & Grill App, test_models.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-models.PNG">
+</details>
+
+<details><summary>Bar & Grill App, test_views.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-views.PNG">
+</details>
+
+<details><summary>Bar & Grill App, test_urls.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-urls.PNG">
+</details>
+
+<details><summary>Bar & Grill App, Coverage</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bar-and-grill.PNG">
+</details>
+
+<details><summary>Bookings App, test_models.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-models.PNG">
+</details>
+
+<details><summary>Bookings App, test_views.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-views.PNG">
+</details>
+
+<details><summary>Bookings App, test_urls.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-urls.PNG">
+</details>
+
+<details><summary>Bookings App, Coverage</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bookings.PNG">
+</details> -->
+
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- HP Pavilion laptop
+- Smasung S21+
+- Ipad (8th Generation)
+- Iphone 12 Pro
+
+### Browser compatability
+The website was tested on the following browsers:
+- Google Chrome
+- Microsoft Egde
+- Apple Safari
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Static files not loading in heroku| Removed DISABLE_COLLECTSTATIC config var in heroku, fixed issue |
+| Double bookings | Adjusted code to check that the date, time and table were unique together and to give an error to indicate to the user that the booking was unavailable for that date, time and table combination |
+| Food item description not showing on menu | A "p" element was used to encase the jinja code, once removed the food item description was then visible |
+| Foods not listing by type, starters, manins and desserts | I needed to fix the database loop for the food items to specify the food type had to be a starter to display in the starter section of the menu, and the same for mains and desserts |
+| Drinks not listing by type, wines, beers and cocktails | I needed to fix the database loop for the drinks item to specify the drink type had to be a wine to display in the wine section of the menu, and the same for beers and cocktails |
+| Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
+| Booking form accepting phone number that are too short | I used Django PhoneNumberField to ensure only valid phone formats were accepted |
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Heroku Deployment
+
+* This site was deployed by completing the following steps:
+
+1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. On the main page click the "New" in the top right corner and select Create New App from the drop dwon menu
+3. No name can be duplicated so choose an original title
+4. Choose the region where you are based
+5. Click the create new app input
+6. Choose the settings Tab then select config vars to enter in values
+7. Click Reveal Config Vars and choose a port for the key label, 8000 for the value labal and then choose add.  
+8. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes
+9. Click add buildpacks and selct heroku/python and node.js(Must be in this order, they can be clicked and dragged if they need to be changed)
+10. Next select the deploy tab near the top of the page
+11. Choose Github as the deployment method
+12. Select the repository name and then the connect button
+13. At the bottom of the deploy page, select the preferred deployment type (Enable Automatic Deploys for automatic deployment or deploy from branch to push the deployment manually)
+
+## Forking This Project
+
+* Fork this project by following the steps:
+You can for fork the repository by following these steps:
+1. From the GitHub repository
+2. Click the Fork button on the upper right hand corner
+
+## Cloning This Project
+
+* You can clone the repository by following these steps:
+1. From the GitHub repository 
+2. Select the Code button on top of the list of files
+3. Choose your prefeared option to clone HTTPS, SSH, or Github CLI. Select the copy button to copy the URL to your clipboard
+4. Open Git Bash and edit the current working directory to the one where you want the copied directory
+5. Type git clone and paste in URL that you copied ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+6. Next click enter and you will have your local clone
+
+## Credits
+
+### Media
+In alphabetical order:
+- [403-Image](static/images/403img.jpg) : <a href="https://www.freepik.com/free-vector/403-error-forbidden-with-police-concept-illustration_7938324.htm#query=403&position=1&from_view=keyword&track=sph">freepik</a>
+- [404-Image](static/images/404img.jpg) : <a href="https://www.freepik.com/free-vector/500-internal-server-error-concept-illustration_7967792.htm#query=500%20internal%20server%20error&position=0&from_view=keyword&track=aish">freepik</a>
+- [500-Image](static/images/500img.jpg) : <a href="https://www.freepik.com/free-vector/500-internal-server-error-concept-illustration_7967792.htm#query=500%20internal%20server%20error&position=0&from_view=keyword&track=ais
+">freepik</a>
+- [blog_image](static/images/blog_image.jpg) : <a href="https://www.pexels.com/photo/man-in-red-long-sleeved-shirt-853151/">pexels</a>
+- [blog_placeholder](static/images/blog_image.jpg) : <a href="https://www.pexels.com/photo/people-in-cafe-2788792/">pexels</a>
+- [booking_image](static/images/booking_image.jpg) : <a href="https://www.pexels.com/photo/empty-room-1378424/">pexels</a>
+- [cater_image](static/images/cater_image.jpg) : <a href="https://www.pexels.com/photo/group-of-people-doing-cheers-544961//">pexels</a>
+- [drink_image](static/images/drink_image.jpg) : <a href="https://www.pexels.com/photo/two-persons-holding-drinking-glasses-filled-with-beer-1089930/
+">pexels</a>
+- [food_image](static/images/food_image.jpg) : <a href="https://www.pexels.com/photo/close-up-photo-of-a-person-wearing-hand-gloves-cutting-roasted-meat-2491272/">pexels</a>
+- [res_cover_1](static/images/res_cover_1.jpg) : <a href="https://www.pexels.com/photo/white-motor-scooter-near-open-door-219095/">pexels</a>
+- [res_cover_2](static/images/res_cover_2.jpg) : <a href="https://www.pexels.com/photo/brown-bar-stools-in-front-of-rectangular-table-3262277/">pexels</a>
+- [res_cover_3](static/images/res_cover_3.jpg) : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
+
+- Stored images on data
+  - Blog post rose Wine : <a href="https://www.thechoppingblock.com/blog/enjoy-the-worlds-best-ros%C3%A8">pexels</a>
+  - Blog post grill summer : <a href="https://www.thechoppingblock.com/blog/summer-grilling-isnt-cancelled">pexels</a>
+  - Blog post recipe guide : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
+  - Blog post Steak guide : <a href="https://iamafoodblog.com/how-to-cook-steak/
+  ">pexels</a>
+  - Blog post Review : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
+  - Blog 5 things : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
+
+
+### Code
+
+- The inital code was adapted from lessons taught by Code Institute: [Code Institute : Home Page](https://codeinstitute.net/ie/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+IRL+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14304747355&hsa_grp=128775288209&hsa_ad=635725005315&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=Cj0KCQjwnf-kBhCnARIsAFlg491o7ee6Cfv20TwyLD9KWyi47xYkCWKMp3_EWqWQl8eaGV1AWRGDvgEaAnHjEALw_wcB)
+- The words i used to randomize were copied from the website trinket.io: [Put Interactive Python Anywhere on the Web](https://trinket.io/python/99f458ee11)
+- My README.md was based off the template illastrated by [PedroCristo](https://github.com/PedroCristo/portfolio_project_3)
