@@ -1,17 +1,10 @@
-# Imports
+# Bookings model Tests
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.test import TestCase
 from datetime import date
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Internal:
 from .models import Booking, User
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# These test will create a new food and drink item,
-# it will check the name, description and price
 
 
 class TestModels(TestCase):

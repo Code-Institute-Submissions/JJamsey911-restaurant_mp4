@@ -637,22 +637,21 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/bookings_views.png">
 </details>
 
-<!-- <details><summary>test_models.py</summary>
-<img src="docs/validation/pep8/bookings_test_models.png">
+<details><summary>test_models.py</summary>
+<img src="docs/validation/pep8/test_booking_model.png">
 </details>
 
 <details><summary>test_views.py</summary>
-<img src="docs/validation/pep8/bookings_test_views.png">
+<img src="docs/validation/pep8/test_booking_view.png">
 </details>
 
 <details><summary>test_urls.py</summary>
-<img src="docs/validation/pep8/bookings_test_url.png">
-</details> -->
+<img src="docs/validation/pep8/test_booking_urls.png">
+</details>
 
 <details><summary>forms.py</summary>
 <img src="docs/validation/pep8/bookings_forms.png">
 </details>
-
 
 <hr><summary>Blog</summary><hr>
 
@@ -676,13 +675,6 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/blog_test_models.png">
 </details>
 
-<!-- <details><summary>test_views.py</summary>
-<img src="docs/validation/pep8/blog_test_views.png">
-</details>
-
-<details><summary>test_urls.py</summary>
-<img src="docs/validation/pep8/blog_test_urls.png">
-</details> -->
 
 <details><summary>forms.py</summary>
 <img src="docs/validation/pep8/blog_forms.png">

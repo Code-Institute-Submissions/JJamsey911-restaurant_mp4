@@ -1,12 +1,9 @@
-# Create your tests here.
-# Imports
+
+# Test Booking URLS 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Internal:
 from bookings.views import (
     Reservations,
     BookingList,
@@ -14,8 +11,6 @@ from bookings.views import (
     EditBooking,
     cancel_booking,
 )
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 # Test that all the correct urls are used when requested
