@@ -24,7 +24,6 @@
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
-    - [Automated testing](#automated-testing)
     - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
@@ -155,7 +154,7 @@ Jim's Bar & Grill is a fictional business where users can create an account, boo
 
 My goal is to create a simple and efficent website so all features are easily accessible. In order to achieve this, all pages are responive and labeled. All content is made easy to read with links to features clearly visible without being excessive.
 
-### Colour
+### Colours
 The colour sheme was chosen as a dark red and black theme in which i was aided by Adobe Color by using their Split Complementary Color feature. A light grey and simple white was used to give it contrast which was selected also through adobe color. A slighly dark grey was selected for certain elements in the events page.
 <br>
  
@@ -171,7 +170,10 @@ The fonts chosen because of the contrast between them with Kanit's loopless lett
 <br>
 San-serif was used as my backup.
 
-### Structure
+## Structure
+
+### Website pages
+
 The home page is designed to have all relevanet information easily accessible with all relevent navigation clearly visible. The logo is postioned on the left, navigation on the right and this is shown on all pages in the same layout. The design is created also to be responsive on all viewports while maintaing all relevant information: 
 - Homepage with a hero image with login details/bookings anchor. Cards are also used with details and links to other pages of the site.
 - Food menu has the current list of all available foods from the database sorted by different sections of the menu
@@ -187,35 +189,7 @@ The home page is designed to have all relevanet information easily accessible wi
 - Register section allows to have their details stored for easier access to interact with sections of the site
 - 404 page is displayed when a 404 error is raised
 
-### Wireframes
-
-<details><summary>Home</summary>
-<img src="docs/wireframes/home.png">
-(docs/features/kanban-1.png)
-</details>
-<details><summary>Menu</summary>
-<img src="docs/wireframes/menu.png">
-</details>
-<details><summary>Blog</summary>
-<img src="docs/wireframes/blog.png">
-</details>
-<details><summary>Reservations</summary>
-<img src="docs/wireframes/reservations.png">
-</details>
-<details><summary>Contact</summary>
-<img src="docs/wireframes/contact.png">
-</details>
-<details><summary>Register</summary>
-<img src="docs/wireframes/register.png">
-</details>
-<details><summary>Log In/Details</summary>
-<img src="docs/wireframes/log_in_details.png">
-</details>
-<details><summary>404</summary>
-<img src="docs/wireframes/page_404.png">
-</details>
-
-#### Database
+### Database
 
 - Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
 - Two database model shows all the fields stored in the database
@@ -302,6 +276,34 @@ The Contact Model contains the following:
 - phone
 - message
 
+### Wireframes
+
+<details><summary>Home</summary>
+<img src="docs/wireframes/home.png">
+(docs/features/kanban-1.png)
+</details>
+<details><summary>Menu</summary>
+<img src="docs/wireframes/menu.png">
+</details>
+<details><summary>Blog</summary>
+<img src="docs/wireframes/blog.png">
+</details>
+<details><summary>Reservations</summary>
+<img src="docs/wireframes/reservations.png">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/wireframes/contact.png">
+</details>
+<details><summary>Register</summary>
+<img src="docs/wireframes/register.png">
+</details>
+<details><summary>Log In/Details</summary>
+<img src="docs/wireframes/log_in_details.png">
+</details>
+<details><summary>404</summary>
+<img src="docs/wireframes/page_404.png">
+</details>
+
 ## Technologies Used
 
 ### Languages & Frameworks
@@ -338,9 +340,6 @@ The Contact Model contains the following:
   - [Wave Validator](https://wave.webaim.org/)
 
 ##### Back to [top](#table-of-contents)
-
-##### Back to [top](#table-of-contents)
-
 
 ## Features
 
@@ -564,6 +563,8 @@ The Contact Model contains the following:
 ![404 image](docs/features/image_404.png)
 </details>
 
+## Validation
+
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service
 
@@ -671,15 +672,9 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/blog_views.png">
 </details>
 
-<details><summary>test_models.py</summary>
-<img src="docs/validation/pep8/blog_test_models.png">
-</details>
-
-
 <details><summary>forms.py</summary>
 <img src="docs/validation/pep8/blog_forms.png">
 </details>
-
 
 <hr><summary>Contact</summary><hr>
 
@@ -698,15 +693,6 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <details><summary>views.py</summary>
 <img src="docs/validation/pep8/contact_views.png">
 </details>
-
-<!-- <details><summary>test_views.py</summary>
-<img src="docs/validation/pep8/contact_test_views.png">
-</details>
-
-<details><summary>test_urls.py</summary>
-<img src="docs/validation/pep8/contact_test_urls.png">
-</details> -->
-
 
 <hr><summary>Home</summary><hr>
 
@@ -833,10 +819,6 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="docs/validation/lighthouse/register_mobile.png">
 </details>
 
-<!-- <details><summary>404</summary>
-<img src="docs/validation/page_404_mobile.png">
-</details> -->
-
 ### Wave
 WAVE was used to test the websites accessibility.
 
@@ -852,9 +834,6 @@ WAVE was used to test the websites accessibility.
 <img src="docs/validation/wave/login.png">
 </details>
 
-<!-- <details><summary>Logout</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
 
 <details><summary>Food Menu</summary>
 <img src="docs/validation/wave/food.png">
@@ -863,22 +842,6 @@ WAVE was used to test the websites accessibility.
 <details><summary>Drinks Menu</summary>
 <img src="docs/validation/wave/drink.png">
 </details>
-
-<!-- <details><summary>Reservations</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
-
-<!-- <details><summary>My Bookings</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
-
-<!-- <details><summary>Edit Booking</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
-
-<!-- <details><summary>Delete Booking</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
 
 <details><summary>Blog</summary>
 <img src="docs/validation/wave/blog.png">
@@ -891,10 +854,6 @@ WAVE was used to test the websites accessibility.
 <details><summary>Contact Us</summary>
 <img src="docs/validation/wave/contact.png">
 </details>
-
-<!-- <details><summary>404</summary>
-<img src="docs/validation/wave/home.png">
-</details> -->
 
 
 ##### Back to [top](#table-of-contents)<hr>
@@ -1342,44 +1301,6 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-<!-- ### Automated testing
-
-- Testing was done using the built in Django module, unittest.
-- Coverage was also usesd to generate a report
-
-
-<details><summary>Bar & Grill App, test_models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-models.PNG">
-</details>
-
-<details><summary>Bar & Grill App, test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-views.PNG">
-</details>
-
-<details><summary>Bar & Grill App, test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-urls.PNG">
-</details>
-
-<details><summary>Bar & Grill App, Coverage</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bar-and-grill.PNG">
-</details>
-
-<details><summary>Bookings App, test_models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-models.PNG">
-</details>
-
-<details><summary>Bookings App, test_views.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-views.PNG">
-</details>
-
-<details><summary>Bookings App, test_urls.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-urls.PNG">
-</details>
-
-<details><summary>Bookings App, Coverage</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bookings.PNG">
-</details> -->
-
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
@@ -1483,5 +1404,9 @@ In alphabetical order:
 ### Code
 
 - The inital code was adapted from lessons taught by Code Institute: [Code Institute : Home Page](https://codeinstitute.net/ie/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+IRL+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14304747355&hsa_grp=128775288209&hsa_ad=635725005315&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=Cj0KCQjwnf-kBhCnARIsAFlg491o7ee6Cfv20TwyLD9KWyi47xYkCWKMp3_EWqWQl8eaGV1AWRGDvgEaAnHjEALw_wcB)
-- The words i used to randomize were copied from the website trinket.io: [Put Interactive Python Anywhere on the Web](https://trinket.io/python/99f458ee11)
-- My README.md was based off the template illastrated by [PedroCristo](https://github.com/PedroCristo/portfolio_project_3)
+
+-## Acknowledgements
+I would like to thank:
+- My mentor Mo Shami for his feedback and helpful advice
+- To Code Institute for their helpful and informative guidance
+
