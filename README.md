@@ -220,9 +220,13 @@ The home page is designed to have all relevanet information easily accessible wi
 - Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
 - Two database model shows all the fields stored in the database
 
+<details><summary>Data Schema</summary>
+<img src="docs/data_schema.png">
+</details>
+
 ##### User Model
 The User Model contains the following:
-- username
+- username (PrimaryKey)
 - first_name
 - last_name
 - email
@@ -235,22 +239,22 @@ The User Model contains the following:
 - last_login
 - date_joined
 
-##### FoodItem Model
-The FoodItem Model contains the following:
-- food_id
-- food_name
+##### FoodSelection Model
+The FoodSelection Model contains the following:
+- food_id (PrimaryKey)
+- name_food
 - description
 - price
-- food_type
+- food_choice
 - available
 
-##### DrinkItem Model
-The DrinkItem Model contains the following:
-- drink_id
-- drink_name
+##### DrinkSelection Model
+The DrinkSelection Model contains the following:
+- drink_id (PrimaryKey)
+- name_drink
 - description
 - price
-- drink_type
+- drink_choice
 - available
 
 ##### Booking Model
@@ -259,7 +263,8 @@ The Booking Model contains the following:
 - created_date
 - requested_date
 - requested_time
-- guest (ForeignKey)
+- user (ForeignKey)
+- name
 - email
 - phone
 - status
@@ -269,14 +274,12 @@ The Booking Model contains the following:
 ##### Post Model
 The Post Model contains the following:
 - title
-- slug
 - author (ForeignKey)
 - featured_image
-- post_id (PrimaryKey)
 - excerpt
-- updated_date
+- updated_on
 - content
-- created_date
+- created_on
 - status
 - likes
 
@@ -291,12 +294,12 @@ The Comment Model contains the following:
 
 ##### Contact Model
 The Contact Model contains the following:
-- message_id (PrimaryKey)
+- message_id
 - created_date
 - user (ForeignKey) 
-- name (ForeignKey)
-- email (ForeignKey)
-- phone (ForeignKey)
+- name
+- email
+- phone
 - message
 
 ## Technologies Used
@@ -305,9 +308,9 @@ The Contact Model contains the following:
 
 - HTML
 - CSS
-- Bootstrap 5
 - Python
 - Django
+- Javascript
 
 
 ### Libraries & Tools
@@ -403,7 +406,6 @@ The Contact Model contains the following:
 ### Logout
 - Allows the user to securely log out
 - Prompt displays asking user to confirm if they want to log out
-- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -414,7 +416,6 @@ The Contact Model contains the following:
 ### Reservations
 - Allows the user to book a table using the reservation form
 - A prompt is displayed if incorrect or invalid data is posted
-- User stories covered:
 
 <details><summary>See feature images</summary>
 
@@ -428,9 +429,6 @@ The Contact Model contains the following:
 - Users can view all valid bookings pagianted in a 6 card layout 
 - Bookings are automatically expired when the date and time goes passed the current date
 - The staus of the booking is displayed
-- User stories covered:
-
-
 
 <details><summary>See feature images</summary>
 
@@ -440,7 +438,7 @@ The Contact Model contains the following:
 
 ### Edit Booking
 - Users can edit their booking to another date, time and number of guests
-- User stories covered:
+
 
 <details><summary>See feature images</summary>
 
@@ -451,7 +449,6 @@ The Contact Model contains the following:
 
 ### Cancel Booking 
 - Users can cancel their booking and gives a prompt to confirm
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -463,7 +460,6 @@ The Contact Model contains the following:
 - All available food items are displayed
 - Menu is seperated in sections
 - Admin/Authorised users can add, edit and delete items
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -475,7 +471,6 @@ The Contact Model contains the following:
 - All available drink items are displayed
 - Menu is seperated into differnet sections
 - Admin/Authorised users can add, edit and delete items
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -483,14 +478,13 @@ The Contact Model contains the following:
 </details>
 
 
-<!-- ### Blog
+### Blog
 - Blog posts are displayed 
 - All blog posts are organised into a pagianted format for every 6 posts
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
-![Blog](docs/features/feature-blog.PNG)
+![Blog](docs/features/blog_posts.png)
 </details>
 
 
@@ -500,11 +494,10 @@ The Contact Model contains the following:
 - If no image is uploaded a default image is then used
 - Registerd user can comment on the blog
 - Registerd user can like the blog
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
-![Blog Expanded](docs/features/feature-blog2.PNG)
+![Blog Expanded](docs/features/blog_expanded.png)
 </details>
 
 
@@ -512,29 +505,27 @@ The Contact Model contains the following:
 - Blog comments reuqire approval by admin and will display as pending untill admin review
 - Users must be signed in to comment on a post
 - Approaval of comments must be done through the admin panal
-- User stories covered:
+
   
 <details><summary>See feature images</summary>
 
-![Comments](docs/features/feature-comments.PNG)
-</details> -->
+![Comments](docs/features/blog_comment.png)
+</details>
 
-<!-- ### Likes
+### Like Button
 - The number of likes is displayed
 - Only registered users can like a blog post
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
 ![Comments](docs/features/blog_like.png)
-</details>  -->
+</details> 
 
 
 ### Contact Us
 - Users who are signed in can send a message with the message form
 - Phone, email, address and opening hours are displayed
 - An embedded Google Map is also displayed
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -548,7 +539,6 @@ The Contact Model contains the following:
 - An icon with a link is used for each social media displayed
 - Each link opens in a new tab so the user has access to the website after being redirected
 - Featured on all pages
-- User stories covered:
   
 <details><summary>See feature images</summary>
 
@@ -559,7 +549,7 @@ The Contact Model contains the following:
 ### Pagination
 - The blog post displays and the booking list both use pagination
 - Ensures a consistant and organised display is shown with only 6 itemsa per page
-- User stories covered:
+
   
 <details><summary>See feature images</summary>
 
@@ -568,7 +558,8 @@ The Contact Model contains the following:
 
 ### 404 page
 - A custom 404 page takes away the confusion of not landing on the page they had intended to land on.
-- User stories covered: 
+
+<details><summary>See feature images</summary>
 
 ![404 image](docs/features/image_404.png)
 </details>
@@ -592,9 +583,9 @@ JSHint JS Validation Service
 ### CI Python Linter
 CI Python Linter Validation Service was used to check the code for PEP8 requirements.
 
-<details><summary>Tool used: Pycodestyle</summary>
-<img src="docs/validation/pep8/.png">
-</details>
+<summary>Tool used: CI Python Linter</summary>
+ <a href="https://pep8ci.herokuapp.com/"> CI Python Linter</a>
+
 
 <hr><summary>Menus</summary><hr>
 
@@ -646,7 +637,7 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/bookings_views.png">
 </details>
 
-<details><summary>test_models.py</summary>
+<!-- <details><summary>test_models.py</summary>
 <img src="docs/validation/pep8/bookings_test_models.png">
 </details>
 
@@ -656,7 +647,7 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 
 <details><summary>test_urls.py</summary>
 <img src="docs/validation/pep8/bookings_test_url.png">
-</details>
+</details> -->
 
 <details><summary>forms.py</summary>
 <img src="docs/validation/pep8/bookings_forms.png">
@@ -685,13 +676,13 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/blog_test_models.png">
 </details>
 
-<details><summary>test_views.py</summary>
+<!-- <details><summary>test_views.py</summary>
 <img src="docs/validation/pep8/blog_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
 <img src="docs/validation/pep8/blog_test_urls.png">
-</details>
+</details> -->
 
 <details><summary>forms.py</summary>
 <img src="docs/validation/pep8/blog_forms.png">
@@ -716,13 +707,13 @@ CI Python Linter Validation Service was used to check the code for PEP8 requirem
 <img src="docs/validation/pep8/contact_views.png">
 </details>
 
-<details><summary>test_views.py</summary>
+<!-- <details><summary>test_views.py</summary>
 <img src="docs/validation/pep8/contact_test_views.png">
 </details>
 
 <details><summary>test_urls.py</summary>
 <img src="docs/validation/pep8/contact_test_urls.png">
-</details>
+</details> -->
 
 
 <hr><summary>Home</summary><hr>
@@ -1491,6 +1482,10 @@ In alphabetical order:
   ">pexels</a>
   - Blog post Review : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
   - Blog 5 things : <a href="https://www.pexels.com/photo/group-of-people-in-coffee-shop-1296543/">pexels</a>
+
+### Blog post articles
+
+- All Blog post articles : <a href="https://iamafoodblog.com/">iamafoodblog</a>
 
 
 ### Code

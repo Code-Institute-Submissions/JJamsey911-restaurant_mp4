@@ -18,7 +18,7 @@ class TestModels(TestCase):
             name_food='Test Food',
             description='Test description',
             price='4.99',
-            food_choice= '2',
+            food_choice='2',
             )
         self.assertFalse(food.available)
         self.assertEqual(food.price, '4.99')
