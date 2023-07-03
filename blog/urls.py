@@ -1,16 +1,10 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.urls import path
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Internal:
 from . import views
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# Urls for the blog which shows all posts and post expand which
-# enters the post for the user to read
+# Urls for all the pages in the blog app
 urlpatterns = [
     path("blog/", views.PostList.as_view(), name="blog"),
     path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail"),

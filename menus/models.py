@@ -1,10 +1,7 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.db import models
 
-# Internal
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Food and Drinks type so all food and drinks can be categorised
 FOOD_CHOICE = (
@@ -31,8 +28,7 @@ DRINK_CHOICE = (
 
 class FoodSelection(models.Model):
     """
-    a class for the food item model, contains
-    starters, mains and dessert foods
+    A classs for all FoodSelection items in menu_food
     """
 
     food_id = models.AutoField(primary_key=True)
@@ -54,8 +50,7 @@ class FoodSelection(models.Model):
 
 class DrinkSelection(models.Model):
     """
-    a class for the drink item model, contains
-    wines, beers and cocktails
+    A classs for all DrinkSelection items in menu_drinks
     """
 
     drink_id = models.AutoField(primary_key=True)

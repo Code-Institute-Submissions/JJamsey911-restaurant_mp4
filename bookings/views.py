@@ -1,6 +1,5 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.shortcuts import render, reverse, redirect
 from django.views import generic, View
 from django.contrib.auth.models import User
@@ -9,41 +8,30 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Internal:
+
 from .models import Booking
 from .forms import BookingForm
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-# This will get the user information if they are logged in
+# THis shows if user is logged in
 
 def get_user_instance(request):
-    """
-    retrieves user details if logged in
-    """
-
+    # Display autofil features
     user_email = request.user.email
     user = User.objects.filter(email=user_email).first()
     return user
 
 
-# Display the booking form and auto fill users email,
-# if user is did not provide email it will stay empty
-
-
+    
+#Dispalyes booking form with autofil features
 class Reservations(View):
-    """
-    This view displays the booking form if the user
-    is registered and inserts the users email into the
-    email field
-    """
+
     template_name = 'bookings/reservations.html'
     success_message = 'Booking has been made.'
 
     def get(self, request, *args, **kwargs):
         """
-        Retrieves users email and inputs into email input
+        Collects users email
         """
         if request.user.is_authenticated:
             email = request.user.email
@@ -54,10 +42,7 @@ class Reservations(View):
                       {'booking_form': booking_form})
 
     def post(self, request):
-        """
-        Checks that the provided info is valid format
-        and then posts to database
-        """
+        # COnfirms correct formatting
         booking_form = BookingForm(data=request.POST)
 
         if booking_form.is_valid():
@@ -75,10 +60,9 @@ class Reservations(View):
 # Dispays the confirmation page upon a succesful booking
 
 
+# This view will display confirmation on a successful booking
 class Confirmed(generic.DetailView):
-    """
-    This view will display confirmation on a successful booking
-    """
+
     template_name = 'bookings/confirmed.html'
 
     def get(self, request):
@@ -90,12 +74,8 @@ class Confirmed(generic.DetailView):
 # user will not be able to edit or cancel them once
 # expired
 
-
+# This view will display all the users bookings
 class BookingList(generic.ListView):
-    """
-    This view will display all the bookings
-    a particular user has made
-    """
     model = Booking
     queryset = Booking.objects.filter().order_by('-created_date')
     template_name = 'booking_list.html'
@@ -125,16 +105,15 @@ class BookingList(generic.ListView):
         else:
             return redirect('accounts/login.html')
 
+'''
+Displays the edit booking page for 
+users to edit their reservation
+'''
 
-# Displays the edit booking page and form so the user
-# can then change any detail of the booking and update it
 
-
+# This view will display the booking by it's primary key 
 class EditBooking(SuccessMessageMixin, UpdateView):
-    """
-    This view will display the booking by it's primary key
-    so the user can then edit it
-    """
+    
     model = Booking
     form_class = BookingForm
     template_name = 'bookings/edit_booking.html'
@@ -144,12 +123,10 @@ class EditBooking(SuccessMessageMixin, UpdateView):
         return reverse('booking_list')
 
 
-# Deletes the selected booking the user wishes to cancel
+# User can delte their bookin
 
 def cancel_booking(request, pk):
-    """
-    Deletes the booking identified by it's primary key by the user
-    """
+    
     booking = Booking.objects.get(pk=pk)
 
     if request.method == 'POST':

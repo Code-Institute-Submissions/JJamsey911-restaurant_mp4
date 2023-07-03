@@ -5,7 +5,7 @@ from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
 
-
+# Orders blogs post into a list view, in order and in paginated fashion
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -14,7 +14,9 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    '''
+    Displays full blog post with relevent details
+    '''
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -36,7 +38,7 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-
+        
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -69,7 +71,9 @@ class PostDetail(View):
 
 
 class PostLike(View):
-
+    '''
+    Add or retracts like button view
+    '''
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():

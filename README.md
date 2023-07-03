@@ -24,6 +24,7 @@
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
     - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
@@ -1301,6 +1302,37 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
+### Automated testing
+
+- Testing was done using the built in Django module, unittest.
+- Coverage was also usesd to generate a report
+
+
+<details><summary>Menus App, test_models.py</summary>
+<img src="docs/testing/test_menus_models.png">
+</details>
+
+<details><summary>Menus app, test_views.py</summary>
+<img src="docs/testing/test_menus_views.png"></details>
+
+<details><summary>Menus App, test_urls.py</summary>
+<img src="docs/testing/test_menus_urls.png"></details>
+
+<details><summary>Menus App, Coverage</summary>
+<img src="docs/testing/coverage_menus.png"></details>
+
+<details><summary>Bookings App, test_models.py</summary>
+<img src="docs/testing/invalid_date_botest_book_modelok.png"></details>
+
+<details><summary>Bookings App, test_views.py</summary>
+<img src="docs/testing/test_book_view.png"></details>
+
+<details><summary>Bookings App, test_urls.py</summary>
+<img src="docs/testing/test_book_url.png"></details>
+
+<details><summary>Bookings App, Coverage</summary>
+<img src="docs/testing/coverage_book.png"></details>
+
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
@@ -1323,12 +1355,11 @@ The website was tested on the following browsers:
 | **Bug** | **Fix** |
 | ------- | ------- |
 | Static files not loading in heroku| Removed DISABLE_COLLECTSTATIC config var in heroku, fixed issue |
-| Double bookings | Adjusted code to check that the date, time and table were unique together and to give an error to indicate to the user that the booking was unavailable for that date, time and table combination |
-| Food item description not showing on menu | A "p" element was used to encase the jinja code, once removed the food item description was then visible |
-| Foods not listing by type, starters, manins and desserts | I needed to fix the database loop for the food items to specify the food type had to be a starter to display in the starter section of the menu, and the same for mains and desserts |
-| Drinks not listing by type, wines, beers and cocktails | I needed to fix the database loop for the drinks item to specify the drink type had to be a wine to display in the wine section of the menu, and the same for beers and cocktails |
-| Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
-| Booking form accepting phone number that are too short | I used Django PhoneNumberField to ensure only valid phone formats were accepted |
+| Image for blog with no featured was not showing default image | Changed image source and image was then displayed |
+| Alert message not displaying for 5 seconds | Corrected jquery script and alerts now disapear after 5 seconds |
+| Bootstrap elelments not displaying | Updated bootstrap to current syntax and are now correctly displayed  |
+| Pagination nowt showing correctly | Corrected html indentation and now showing correctly  |
+| Map in contact page not displaying | Corrected embeded link and now displaying correctly |
 
 ##### Back to [top](#table-of-contents)<hr>
 
