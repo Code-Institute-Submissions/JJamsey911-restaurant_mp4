@@ -1083,7 +1083,7 @@ WAVE was used to test the websites accessibility.
 | From the bookings page, attempt to book a table and date already booked | Error message displays to say booking not possible | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table3.PNG">
+<img src="docs/testing/invalid_date_book.png">
 </details>
 
 
