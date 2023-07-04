@@ -1264,6 +1264,8 @@ WAVE was used to test the websites accessibility.
 
 1. As a Site Owner I want to provide a easy to use site with all relevent information displayed while being fully responsive
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
 | Click on the 'Home' link in the navigation bar | Homepage will load| Works as expected |
 | Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
 | Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
