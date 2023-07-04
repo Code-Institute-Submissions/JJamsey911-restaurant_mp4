@@ -763,11 +763,9 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="docs/validation/lighthouse/register.png">
 </details>
 
-<!-- <details><summary>404</summary>
-<img src="docs/validation/page_404.png">
-</details> -->
 
 #### Mobile
+
 <details><summary>Home</summary>
 <img src="docs/validation/lighthouse/home_mobile.png">
 </details>
@@ -854,6 +852,10 @@ WAVE was used to test the websites accessibility.
 
 <details><summary>Contact Us</summary>
 <img src="docs/validation/wave/contact.png">
+</details>
+
+<details><summary>404 page</summary>
+<img src="docs/validation/wave/page_404.png">
 </details>
 
 
