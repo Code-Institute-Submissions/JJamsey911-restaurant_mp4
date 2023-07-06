@@ -1,10 +1,9 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
 
-# Restaurant first sitting at noon and last sitting 11pm
+# Restaurant time slots
 time_slots = (
     ("12:00", "12:00"),
     ("13:00", "13:00"),
@@ -21,7 +20,7 @@ time_slots = (
 )
 
 
-# Shows a staus for the user to show if his booking has been accepted
+# Shows the status for customers reservation
 status_options = (
     ("Awaiting confirmation", "Awaiting Confirmation"),
     ("Booking Confirmed", "Booking Confirmed"),
@@ -32,12 +31,10 @@ status_options = (
 
 # The booking model for the database
 
-
 class Booking(models.Model):
     """
     a class for the Booking model
     """
-
     booking_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     requested_date = models.DateField()

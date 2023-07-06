@@ -1,5 +1,4 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.models import User
@@ -20,9 +19,10 @@ def get_user_instance(request):
     user = User.objects.filter(email=user_email).first()
     return user
 
-
-# Displays the contact form for the user, autofills their email,
-# checks all data is valid before saving it
+'''
+ Displays the contact form for the user, autofills their email,
+ checks all data is valid before saving it
+ '''
 
 
 class ContactMessage(View):
@@ -31,7 +31,6 @@ class ContactMessage(View):
     is registered and inserts the user email into the
     email field
     """
-
     template_name = "contact/contact.html"
     success_message = "Message has been sent."
 

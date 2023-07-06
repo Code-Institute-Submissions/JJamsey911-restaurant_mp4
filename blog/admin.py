@@ -3,7 +3,7 @@ from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
-# Register your models here.
+# Admin model to add blog posts
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     list_display = ("title", "slug", "status", "created_on")
@@ -12,7 +12,7 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     summernote_fields = ("content",)
 
-
+# Admin model for blog comments
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ("name", "message", "post", "created_on", "approved")

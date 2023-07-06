@@ -1,5 +1,4 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.shortcuts import render, reverse, redirect
 from django.views import generic, View
 from django.contrib.auth.models import User
@@ -13,7 +12,7 @@ from .models import Booking
 from .forms import BookingForm
 
 
-# THis shows if user is logged in
+# This shows if user is logged in
 
 def get_user_instance(request):
     # Display autofil features
@@ -30,9 +29,7 @@ class Reservations(View):
     success_message = 'Booking has been made.'
 
     def get(self, request, *args, **kwargs):
-        """
-        Collects users email
-        """
+        # Collects users email
         if request.user.is_authenticated:
             email = request.user.email
             booking_form = BookingForm(initial={'email': email})
@@ -70,9 +67,6 @@ class Confirmed(generic.DetailView):
 
 
 # Display all the bookings the user has active,
-# bookings older than today will be expired and the
-# user will not be able to edit or cancel them once
-# expired
 
 # This view will display all the users bookings
 class BookingList(generic.ListView):
@@ -88,7 +82,10 @@ class BookingList(generic.ListView):
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
         today = datetime.datetime.now().date()
-
+        '''
+        Shows booking as expired if current date
+        beyond date requested
+        '''
         for date in booking:
             if date.requested_date < today:
                 date.status = 'Booking Expired'
@@ -123,7 +120,7 @@ class EditBooking(SuccessMessageMixin, UpdateView):
         return reverse('booking_list')
 
 
-# User can delte their bookin
+# User can delte their booking
 
 def cancel_booking(request, pk):
     
