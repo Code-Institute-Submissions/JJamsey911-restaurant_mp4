@@ -34,7 +34,7 @@
 
 ### About
 
-Jim's Bar & Grill is a fictional business where users can create an account, book a table, read a blog and view the food and drinks menu.
+Jim's Bar & Grill is a fictional restaurnat where users can create an account, book a table, read, view and like a blog and view the food and drinks menu.
 <hr>
 
 ### User Goals
@@ -346,7 +346,6 @@ The Contact Model contains the following:
 
 ### Home page
 - Home page includes nav bar, main body and a footer
-- User stories covered: 
 
 
 <details><summary>See feature images</summary>
@@ -360,7 +359,6 @@ The Contact Model contains the following:
 - Fully Responsive layout when viewed on differnt viewports
 - Provides a logged in/out status
 - Featured on all pages
-- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -373,7 +371,6 @@ The Contact Model contains the following:
 ### Footer
 - Featured on all pages
 - Consists of all social media links
-- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -384,7 +381,6 @@ The Contact Model contains the following:
 ### Sign up / Register
 - Allows users to sign up or register an account
 - Password and username is required
-- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -394,7 +390,6 @@ The Contact Model contains the following:
 
 ### Login
 - User can login to advantage of a number of features when logged in
-- User stories covered: 
 
 <details><summary>See feature images</summary>
 
@@ -1438,7 +1433,7 @@ In alphabetical order:
 
 ### Code
 
-- The inital code was adapted from lessons taught by Code Institute: [Code Institute : Home Page](https://codeinstitute.net/ie/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+IRL+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14304747355&hsa_grp=128775288209&hsa_ad=635725005315&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=Cj0KCQjwnf-kBhCnARIsAFlg491o7ee6Cfv20TwyLD9KWyi47xYkCWKMp3_EWqWQl8eaGV1AWRGDvgEaAnHjEALw_wcB)
+- The inital code was adapted from lessons taught by Code Institute's, program, tutor's, menotor's, fellow students and it's Slack Channels : [Code Institute : Home Page](https://codeinstitute.net/ie/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+IRL+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14304747355&hsa_grp=128775288209&hsa_ad=635725005315&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=Cj0KCQjwnf-kBhCnARIsAFlg491o7ee6Cfv20TwyLD9KWyi47xYkCWKMp3_EWqWQl8eaGV1AWRGDvgEaAnHjEALw_wcB)
 
 ## Acknowledgements
 I would like to thank:
