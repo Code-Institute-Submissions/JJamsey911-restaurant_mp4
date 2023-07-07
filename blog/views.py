@@ -6,6 +6,7 @@ from .models import Post
 from .forms import CommentForm
 from django.contrib import messages
 
+
 # Orders blogs post into a list view, in order and in paginated fashion
 class PostList(generic.ListView):
     model = Post

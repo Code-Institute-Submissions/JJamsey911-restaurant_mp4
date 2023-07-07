@@ -1,8 +1,8 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.urls import path
 
 from . import views
+
 
 # Urls for all the pages in the blog app
 urlpatterns = [

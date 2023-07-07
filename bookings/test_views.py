@@ -1,5 +1,4 @@
 # Bookings Views Test
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.test import TestCase, Client
 from django.urls import reverse
 
@@ -25,4 +24,3 @@ class TestBookingsViews(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "bookings/confirmed.html")
-

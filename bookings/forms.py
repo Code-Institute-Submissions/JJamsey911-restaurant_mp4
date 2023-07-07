@@ -3,12 +3,10 @@ from django import forms
 from crispy_forms.helper import FormHelper
 from datetime import datetime
 from phonenumber_field.formfields import PhoneNumberField
-
 from .models import Booking
 
+
 # The booking form users will use to book a table
-
-
 class BookingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -37,4 +35,3 @@ class BookingForm(forms.ModelForm):
             "requested_date",
             "requested_time",
         )
-

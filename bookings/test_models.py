@@ -1,10 +1,8 @@
 # Bookings model Tests
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.test import TestCase
 from datetime import date
 
 from .models import Booking, User
-
 
 
 class TestModels(TestCase):

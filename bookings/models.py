@@ -3,6 +3,7 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
 
+
 # Restaurant time slots
 time_slots = (
     ("12:00", "12:00"),

@@ -1,13 +1,9 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.test import TestCase, Client
 from django.urls import reverse
 
 
-
 # Test that the correct views are used for food and drinks menu
-
-
 class TestMenusViews(TestCase):
     def setUp(self):
         self.client = Client()

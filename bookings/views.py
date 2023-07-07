@@ -21,8 +21,7 @@ def get_user_instance(request):
     return user
 
 
-    
-#Dispalyes booking form with autofil features
+# Dispalyes booking form with autofil features
 class Reservations(View):
 
     template_name = 'bookings/reservations.html'
@@ -102,6 +101,7 @@ class BookingList(generic.ListView):
         else:
             return redirect('accounts/login.html')
 
+
 '''
 Displays the edit booking page for 
 users to edit their reservation
@@ -110,7 +110,7 @@ users to edit their reservation
 
 # This view will display the booking by it's primary key 
 class EditBooking(SuccessMessageMixin, UpdateView):
-    
+
     model = Booking
     form_class = BookingForm
     template_name = 'bookings/edit_booking.html'
@@ -123,7 +123,7 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 # User can delte their booking
 
 def cancel_booking(request, pk):
-    
+
     booking = Booking.objects.get(pk=pk)
 
     if request.method == 'POST':

@@ -1,6 +1,4 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 
@@ -8,8 +6,6 @@ from menus.views import menu_food, menu_drink
 
 
 # Test that the correct url for food and drinks page are used
-
-
 class TestMenuUrls(SimpleTestCase):
     """
     This class is for testing the food
