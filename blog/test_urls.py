@@ -1,4 +1,3 @@
-
 # Test Booking URLS 
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
@@ -26,7 +25,3 @@ class TestBlogUrls(SimpleTestCase):
     def test_PostDetail_resolved(self):
         url = reverse("<slug:slug>")
         self.assertEquals(resolve(url).func.view_class, PostDetail)
-
-    # def test_PostLike_resolved(self):
-    #     url = reverse("booking_list")
-    #     self.assertEquals(resolve(url).func.view_class, BookingList)
